@@ -1,5 +1,8 @@
 .body {
   background-color: #ffffff;
+  @extend %DMSans-Bold-700;
+  font-size: 16px;
+  color: $dark-blue;
 }
 
 .container {
@@ -34,5 +37,11 @@
   &:active {
     background-color: $dark-blue;
   }
+}
+
+.title {
+  font-size: 36px;
+  color: #191919;
+  text-align: center;
 }
 

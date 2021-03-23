@@ -81,7 +81,6 @@
     }
 
     &--search {
-      background-image: url(../images/icons/search.png);
       background-color: #edf1f4;
       transition: background-color .3s;
       
@@ -95,9 +94,6 @@
     }
 
     &--heart {
-      background-image: url(../images/icons/heart.png);
-      background-repeat: no-repeat;
-      background-position: center center;
       width: 90px;
       border-radius: 25px 0 0 25px;
       background-color: $bg-dark;
@@ -123,9 +119,6 @@
     }
 
     &--cart {
-      background-image: url(../images/icons/cart.png);
-      background-repeat: no-repeat;
-      background-position: center center;
       width: 90px;
       border-radius: 0 25px 25px 0;
       background-color: $bg-dark;
@@ -141,9 +134,6 @@
     }
 
     &--cab {
-      background-image: url(../images/icons/cab.png);
-      background-repeat: no-repeat;
-      background-position: center center;
       background-color: $light-blue;
       transition: background-color .3s;
 
@@ -154,6 +144,21 @@
       &:active {
         background-color: #2292ce;
       }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+
+    &--search {
+      top: 17px;
+      left: 17px;
+    }
+
+    &--cab {
+      left: 15px;
     }
   }
 
@@ -171,11 +176,9 @@
 }
 
 .top-slider {
-
-  &__bg {
-    max-width: 1770px;
-    background-color: $bg-dark;
-  }
+  max-width: 1770px;
+  background-color: $bg-dark;
+  margin: 0 auto;
 
   &__container {
     max-width: 1430px;
@@ -263,8 +266,10 @@
 }
 
 .info {
-  background-color: $bg-light;
+  max-width: 1770px;
   padding: 45px 0;
+  background-color: $bg-light;
+  margin: 0 auto;
 
   &__items {
     display: flex;
@@ -336,6 +341,135 @@
   }
 }
 
+.products {
+  padding: 70px 0 185px 0;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__box {
+    margin-bottom: 75px;
+  }
+
+  &__items {
+    column-count: 4;
+    column-gap: 30px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    padding: 35px 30px;
+    width: 270px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover .products__icons {
+      opacity: 1;
+    }
+  }
+
+  &__photo {
+    min-height: 257px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+  }
+
+  &__icons {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* transition: opacity .3s; */ /*Если добавить это сво-во, то 3 соседних блока начинают мигать при наведении*/
+  }
+
+  &__svg {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: fill .3s;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 3px;
+    background-color: #ffffff;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: $light-blue;
+      fill: #ffffff;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: '';
+    }
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    color: #8b8b8b;
+    padding: 0;
+    cursor: pointer;
+    border: transparent;
+    transition: color .3s, border-color .3s;
+
+    &:focus {
+      border-color: #191919;
+      color: #191919;
+    }
+
+    &:hover {
+      color: #191919;
+    }
+
+    &:active {
+      color: $dark-blue;
+    }
+  }
+}
 
 
 
