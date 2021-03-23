@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -75,14 +76,14 @@
       margin-right: 0;
     }
 
+    &:focus {
+      border: 1px solid $bg-medum;
+    }
+
     &--search {
       background-image: url(../images/icons/search.png);
       background-color: #edf1f4;
       transition: background-color .3s;
-
-      &:focus {
-        border: 1px solid $bg-medum;
-      }
       
       &:hover {
         background-color: #dfdfdf;
@@ -112,10 +113,6 @@
         right: -4px;
       }
 
-      &:focus {
-        border: 1px solid $bg-medum;
-      }
-
       &:hover {
         background-color: #ffbd84;
       }
@@ -134,10 +131,6 @@
       background-color: $bg-dark;
       transition: background-color .3s;
 
-      &:focus {
-        border: 1px solid $bg-medum;
-      }
-
       &:hover {
         background-color: #ffbd84;
       }
@@ -153,10 +146,6 @@
       background-position: center center;
       background-color: $light-blue;
       transition: background-color .3s;
-
-      &:focus {
-        border: 1px solid $bg-medum;
-      }
 
       &:hover {
         background-color: #68a6c8;
@@ -180,6 +169,173 @@
     text-align: center;
   }
 }
+
+.top-slider {
+
+  &__bg {
+    max-width: 1770px;
+    background-color: $bg-dark;
+  }
+
+  &__container {
+    max-width: 1430px;
+    padding: 0 130px;
+    background-image: url(../images/slider/bg-slider.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+
+  &__box {
+    min-height: 820px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    color: $dark-blue;
+  }
+
+  &__title {
+    @extend %Rubik-Medium-500;
+    font-size: 72px;
+    text-transform: uppercase;
+    max-width: 470px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    @extend %Rubik-Regular-400;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 370px;
+    width: 100%;
+  }
+
+  &__btn {
+    padding-right: 75px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 22px;
+      height: 8px;
+      background-image: url(../images/icons/arrow-right.png);
+    }
+  }
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    transform: translate(-50%, -50%);
+
+    li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      button {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-color: transparent;
+        width: 29px;
+        height: 29px;
+        @extend %Rubik-Medium-500;
+        color: $dark-blue;
+        font-size: 11px;
+      }
+
+      &.slick-active {
+        border-radius: 50%;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+.info {
+  background-color: $bg-light;
+  padding: 45px 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    line-height: 2;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__title {
+    @extend %DMSans-Bold-700;
+    font-size: 18px;
+    color: #414141;
+
+    &:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: -50px;
+      top: 37px;
+      background-repeat: no-repeat;
+      background-image: url(../images/icons/circle.png);
+    }
+
+    &:before {
+      content: '';
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: -75px;
+      top: 5px;
+      background-repeat: no-repeat;
+    }
+
+    &--support {
+
+      &:before {
+        background-image: url(../images/icons/support-24.png);
+      }
+    }
+    
+    &--delivery {
+
+      &:before {
+        background-image: url(../images/icons/delivery-truck.png);
+      }
+
+      &:after {
+        top: 20px;
+      }
+    }
+
+    &--payment {
+
+      &:before {
+        background-image: url(../images/icons/credit-card.png);
+      }
+    }
+  }
+
+  &__text {
+    @extend %DMSans-Regular-400;
+    font-size: 16px;
+    color: #585858;
+    max-width: 205px;
+  }
+}
+
 
 
 

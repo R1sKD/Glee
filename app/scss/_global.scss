@@ -3,9 +3,36 @@
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+
+  &--big {
+    max-width: 1800px;
+  }
+}
+
+.btn {
+  max-width: 200px;
+  width: 100%;
+  padding: 20px 25px;
+  background-color: $light-blue;
+  color: #ffffff;
+  @extend %Rubik-Medium-500;
+  font-size: 15px;
+  transition: background-color .3s;
+
+  &:focus {
+    border: 1px solid $blue;
+  }
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+  }
 }
 
