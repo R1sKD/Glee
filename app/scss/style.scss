@@ -355,6 +355,10 @@
 .products {
   padding: 63px 0 185px 0;
 
+  &__container {
+    max-width: 1260pxgit;
+  }
+
   &__title {
     margin-bottom: 28px;
   }
@@ -364,12 +368,13 @@
   }
 
   &__items {
-    column-count: 4;
-    column-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__item {
     margin-bottom: 40px;
+    margin-right: 30px;
     padding: 35px 30px;
     width: 270px;
     min-height: 380px;
