@@ -270,18 +270,26 @@
 
 .info {
   max-width: 1770px;
-  padding: 45px 0;
+  padding: 35px 0;
   background-color: $bg-light;
   margin: 0 auto;
 
   &__items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     line-height: 2;
   }
 
   &__item {
+    max-width: 595px;
+    width: 100%;
+    padding: 0 150px 0 220px;
     position: relative;
+    border-right: 1px solid #e8e4df;
+
+    &:last-child {
+      border-right: none;
+    }
   }
 
   &__title {
@@ -294,8 +302,8 @@
       width: 20px;
       height: 20px;
       position: absolute;
-      left: -50px;
-      top: 37px;
+      left: 176px;
+      top: 46px;
       background-repeat: no-repeat;
       background-image: url(../images/icons/circle.png);
     }
@@ -305,8 +313,8 @@
       width: 50px;
       height: 50px;
       position: absolute;
-      left: -75px;
-      top: 5px;
+      left: 140px;
+      top: 20px;
       background-repeat: no-repeat;
     }
 
@@ -324,7 +332,7 @@
       }
 
       &:after {
-        top: 20px;
+        top: 40px;
       }
     }
 
@@ -340,19 +348,19 @@
     @extend %DMSans-Regular-400;
     font-size: 16px;
     color: #585858;
-    max-width: 213px;
+    width: 215px;
   }
 }
 
 .products {
-  padding: 70px 0 185px 0;
+  padding: 63px 0 185px 0;
 
   &__title {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
 
   &__box {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 
   &__items {
@@ -434,42 +442,6 @@
 
     &:after {
       content: '';
-    }
-  }
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-
-  &__item {
-    margin-right: 30px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  &__btn {
-    border: none;
-    background-color: transparent;
-    color: #8b8b8b;
-    padding: 0;
-    cursor: pointer;
-    border: transparent;
-    transition: color .3s, border-color .3s;
-
-    &:focus {
-      border-color: #191919;
-      color: #191919;
-    }
-
-    &:hover {
-      color: #191919;
-    }
-
-    &:active {
-      color: $dark-blue;
     }
   }
 }

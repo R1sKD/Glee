@@ -46,3 +46,43 @@
   text-align: center;
 }
 
+.box {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-right: 38px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    color: #8b8b8b;
+    padding: 0;
+    cursor: pointer;
+    border: transparent;
+    transition: color .3s, border-color .3s;
+
+    &:focus {
+      border-color: #191919;
+      color: #191919;
+    }
+
+    &:hover {
+      color: #191919;
+    }
+
+    &:active {
+      color: $dark-blue;
+    }
+
+    &.mixitup-control-active {
+      color: #191919;
+    }
+  }
+}
+
