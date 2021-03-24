@@ -1,8 +1,18 @@
+html,
+body {
+  height: 100%;
+}
 .body {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   @extend %DMSans-Bold-700;
   font-size: 16px;
   color: $dark-blue;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .container {
@@ -17,6 +27,7 @@
 }
 
 .btn {
+  border: none;
   max-width: 200px;
   width: 100%;
   padding: 20px 25px;
