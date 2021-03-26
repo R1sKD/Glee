@@ -4,6 +4,6 @@ $(function(){
     dots: true,
   });
 
-  var mixer = mixitup('.products__list');
-  var mixer = mixitup('.design__list');
+  var mixer1 = mixitup('.products__list');
+  var mixer2 = mixitup('.design__list');
 });

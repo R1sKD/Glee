@@ -1,0 +1,47 @@
+.video {
+  background-image: url(../../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 495px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  &__link {
+    display: inline-block;
+    background-image: url(../../images/video-play.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    outline: transparent;
+    transition: background-color 0.3s,
+    box-shadow 0.3s;
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &:focus {
+      background-color: $bg-dark;
+    }
+
+    &:hover {
+      background-color: $dark-blue;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+      box-shadow: 0px 0px 55px 23px rgba(34, 60, 80, 0.2) inset;
+    }
+  }
+}
