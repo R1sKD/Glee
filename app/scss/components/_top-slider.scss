@@ -45,6 +45,9 @@
     margin-bottom: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 
   &__text {
@@ -57,23 +60,9 @@
     overflow: hidden;
     max-height: 300px;
     text-overflow: ellipsis;
-  }
-
-  &__btn {
-    text-align: left;
-    padding-right: 40px;
-    position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 22px;
-      height: 8px;
-      background-image: url(../images/icons/arrow-right.png);
-    }
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 
   &__img {

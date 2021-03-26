@@ -29,6 +29,9 @@
     max-height: 140px;
     overflow: hidden;
     text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 
     &:after {
       content: '';
@@ -86,5 +89,8 @@
     max-height: 70px;
     overflow: hidden;
     text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 }

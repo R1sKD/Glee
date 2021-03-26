@@ -98,7 +98,9 @@
   &__form-btn {
     position: relative;
     left: -3px;
+    text-overflow: ellipsis;
     max-width: 100px;
+    overflow: hidden;
     padding: 10px;
   }
 

@@ -59,9 +59,6 @@ body {
   max-width: 200px;
   width: 100%;
   max-height: 60px;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
   padding: 20px 25px;
   background-color: $light-blue;
   color: #ffffff;
@@ -70,6 +67,24 @@ body {
   cursor: pointer;
   outline: transparent;
   transition: background-color 0.3s, color 0.3s;
+
+  &--arrow {
+     text-align: left;
+     padding-right: 40px;
+     position: relative;
+
+     &::after {
+       content: '';
+       position: absolute;
+       right: 0;
+       top: 50%;
+       transform: translate(-50%, -50%);
+       width: 22px;
+       height: 8px;
+       background-image: url(../images/icons/arrow-right.svg);
+       background-repeat: no-repeat;
+     }
+   }
 
   &:focus {
     box-shadow: 0px 0px 8px 10px rgba(34, 60, 80, 0.19);

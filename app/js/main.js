@@ -5,4 +5,5 @@ $(function(){
   });
 
   var mixer = mixitup('.products__list');
+  var mixer = mixitup('.design__list');
 });
