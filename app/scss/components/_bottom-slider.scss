@@ -1,0 +1,18 @@
+.bottom-slider {
+  min-height: 440px;
+  background-color: $bg-light;
+  margin-top: -169px;
+
+  &__partners {
+    min-height: 435px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  &__img {
+    max-width: 200px;
+    max-height: 100px;
+  }
+}

@@ -1,7 +1,12 @@
 $(function(){
+  
   $('.top-slider__inner').slick({
     arrows: false,
     dots: true,
+  });
+
+  $('.bottom-slider__inner').slick({
+    arrows: false,
   });
 
   var containerEl1 = document.querySelector('[data-ref="products__list"]');
