@@ -4,6 +4,15 @@ $(function(){
     dots: true,
   });
 
-  var mixer1 = mixitup('.products__list');
-  var mixer2 = mixitup('.design__list');
+  var containerEl1 = document.querySelector('[data-ref="products__list"]');
+  var containerEl2 = document.querySelector('[data-ref="design__list"]');
+ 
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+ 
+  var mixer1 = mixitup(containerEl1, config);
+  var mixer2 = mixitup(containerEl2, config);
 });
