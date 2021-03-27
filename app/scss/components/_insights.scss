@@ -9,8 +9,23 @@
     margin-bottom: 35px;
   }
 
+  &__title {
+    max-width: 800px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+
   &__link {
     color: $black;
+    max-width: 370px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
   }
 
   &__svg {
@@ -31,8 +46,18 @@
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   }
 
-  &__img {
+  &__photo {
     margin-bottom: 35px;
+    max-width: 370px;
+    height: 250px;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute; /*Центруем большие изображения*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__info {
@@ -48,13 +73,22 @@
       border-radius: 15px;
       padding: 4px 15px;
       max-height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
     }
     
     span {
+      display: inline-block;
       @extend %Rubik-400;
       font-size: 12px;
       line-height: 2.5;
       margin-right: 30px;
+      max-width: 118px;
+      max-height: 19px;
+      overflow: hidden;
 
       &:last-child {
         margin-right: 0;
@@ -71,6 +105,11 @@
     color: $black;
     margin-bottom: 10px;
     border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 
 }
