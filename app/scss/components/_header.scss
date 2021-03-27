@@ -41,8 +41,16 @@
     border-bottom: 1px solid transparent;
     transition: border-color .3s;
 
+    &:focus {
+      box-shadow: 0px 0px 8px 10px rgba(34, 60, 80, 0.19);
+    }
+
     &:hover {
       border-color: $dark-blue;
+    }
+
+    &:active {
+      color: $bg-dark;
     }
   }
 }
