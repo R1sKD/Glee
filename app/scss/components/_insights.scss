@@ -1,5 +1,7 @@
 .insights {
   padding-top: 105px;
+  position: relative;
+  z-index: 2;
 
   &__top {
     display: flex;
@@ -95,10 +97,18 @@
       -webkit-box-orient: vertical;
       display: -webkit-box;
     }
-    
+  }
+
+  &__data {
+    svg {
+      width: 6px;
+      height: 9px;
+    }
+
     span {
       display: inline-block;
       @extend %Rubik-400;
+      text-transform: uppercase;
       font-size: 12px;
       line-height: 2.5;
       margin-right: 30px;
@@ -127,5 +137,4 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
   }
-
 }

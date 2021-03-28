@@ -184,11 +184,14 @@
     position: absolute;
     right: 30px;
     bottom: 27px;
-    font-size: 14px;
+    font-size: 12px;
     background-color: #ffffff;
     border-radius: 50%;
-    width: 14px;
-    height: 14px;
-    text-align: center;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
