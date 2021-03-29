@@ -37,3 +37,10 @@ $black: #262626;
   sans-serif;
   font-weight: 400;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
