@@ -15,78 +15,77 @@
 
   <header class="header">
     <div class="container container--big">
-      <div class="header__inner">
+
+      <nav class="nav">
 
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo Glee">
         </a>
 
-        <nav class="nav">
-          <div class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#">Home +</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">About</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Services</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Pages +</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">News</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="user">
-            <li class="user__list">
-              <button class="user__button user__link--search">
-                <span class="sr-only">Search</span>
-                <svg class="user__svg user__svg--search">
-                  <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                </svg>
-              </button>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home +</a>
             </li>
-
-            <li class="user__list">
-              <a class="user__link user__link--heart" href="#">
-                <span class="sr-only">Like</span>
-                <svg class="user__svg">
-                  <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                </svg>
-                <span class="user__num">0</span>
-              </a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
             </li>
-
-            <li class="user__list">
-              <a class="user__link user__link--cart" href="#">
-                <span class="sr-only">Cart</span>
-                <svg class="user__svg">
-                  <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                </svg>
-                <span class="user__num">0</span>
-              </a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services</a>
             </li>
-
-            <li class="user__list">
-              <button class="user__button user__link--cab">
-                <span class="sr-only">Cabinet</span>
-                <svg class="user__svg user__svg--cab">
-                  <use xlink:href='sprite/sprite.svg#icons--cab'></use>
-                </svg>
-              </button>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pages +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
             </li>
           </ul>
-        </nav>
+        </div>
 
-      </div>
+        <ul class="product-nav">
+          <li class="product-nav__list">
+            <button class="product-nav__element">
+              <span class="sr-only">Search products</span>
+              <svg class="product-nav__svg">
+                <use xlink:href='sprite/sprite.svg#icons--search'></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="product-nav__list">
+            <a class="product-nav__element product-nav__element--header-heart" href="#">
+              <span class="sr-only">Liked products</span>
+              <svg class="product-nav__svg">
+                <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+              </svg>
+              <span class="product-nav__num">0</span>
+            </a>
+          </li>
+
+          <li class="product-nav__list">
+            <a class="product-nav__element product-nav__element--header-cart" href="#">
+              <span class="sr-only">Added products</span>
+              <svg class="product-nav__svg">
+                <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+              </svg>
+              <span class="product-nav__num">0</span>
+            </a>
+          </li>
+
+          <li class="product-nav__list">
+            <button class="product-nav__element">
+              <span class="sr-only">Enter to product-nav cabinet</span>
+              <svg class="product-nav__svg">
+                <use xlink:href='sprite/sprite.svg#icons--cab'></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
     </div>
   </header>
 
@@ -106,7 +105,7 @@
               </a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--active" href="#">
+              <a class="breadcrumbs__link" href="#">
                 About Us
               </a>
             </li>
@@ -115,64 +114,50 @@
       </div>
     </section>
 
-    
 
-    <div class="bottom-slider">
+
+    <div class="partners-slider">
       <div class="container">
+        <ul class="partners-slider__list">
 
-        <ul class="bottom-slider__inner">
+          <div class="partners-slider__items">
+            <li class="partners-slider__item">
+              <img class="partners-slider__img" src="images/partners-slider/1.png" alt="partner">
+            </li>
+          </div>
 
-          <li class="bottom-slider__item">
-            <ul class="bottom-slider__partners">
-              <li class="bottom-slider__partner">
-                <img class="bottom-slider__img" src="images/bottom-slider/1.png" alt="partner">
-              </li>
+          <div class="partners-slider__items">
+            <li class="partners-slider__item">
+              <img class="partners-slider__img" src="images/partners-slider/2.png" alt="partner">
+            </li>
+          </div>
 
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/2.png" alt="partner">
-              </li>
+          <div class="partners-slider__items">
+            <li class="partners-slider__item">
+              <img class="partners-slider__img" src="images/partners-slider/3.png" alt="partner">
+            </li>
+          </div>
 
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/3.png" alt="partner">
-              </li>
+          <div class="partners-slider__items">
+            <li class="partners-slider__item">
+              <img class="partners-slider__img" src="images/partners-slider/4.png" alt="partner">
+            </li>
+          </div>
 
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/4.png" alt="partner">
-              </li>
+          <div class="partners-slider__items">
+            <li class="partners-slider__item">
+              <img class="partners-slider__img" src="images/partners-slider/5.png" alt="partner">
+            </li>
+          </div>
 
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/5.png" alt="partner">
-              </li>
-            </ul>
-          </li>
-
-          <li class="bottom-slider__item">
-            <ul class="bottom-slider__partners">
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/1.png" alt="partner">
-              </li>
-
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/2.png" alt="partner">
-              </li>
-
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/3.png" alt="partner">
-              </li>
-
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/4.png" alt="partner">
-              </li>
-
-              <li class="bottom-slider__item">
-                <img class="bottom-slider__img" src="images/bottom-slider/5.png" alt="partner">
-              </li>
-            </ul>
-          </li>
-
-        </ul>
+          <div class="partners-slider__items">
+            <li class="partners-slider__item">
+              <img class="partners-slider__img" src="images/partners-slider/5.png" alt="partner">
+            </li>
+          </div>
 
       </div>
+      </ul>
     </div>
 
   </main>
@@ -181,7 +166,6 @@
     <div class="container">
       <div class="footer__top">
 
-
         <address class="footer__contact">
           <a class="logo footer__logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo Glee">
@@ -189,19 +173,30 @@
 
           <ul class="footer__contact-list">
             <li class="footer__contact-item">
-              <p>ADDRESS: 4772 Wines Lane</p>
-              <p>Houston, TX 77032</p>
+              <div class="footer__contact-text">
+                <p>ADDRESS: 4772 Wines Lane</p>
+                <p>Houston, TX 77032</p>
+              </div>
             </li>
 
             <li class="footer__contact-item">
-              <span>Telephone:</span>
-              <a href="tel:+8323475843">+832-347-5843</a>
+              <div class="footer__contact-text">
+                <p>
+                  <span class="footer__contact-name">Telephone:</span>
+                  <a class="footer__contact-link" href="tel:+8323475843">+832-347-5843</a>
+                </p>
+              </div>
             </li>
 
             <li class="footer__contact-item">
-              <span>Email:</span>
-              <a href="mailto:contact@Glee.com">contact@Glee.com</a>
+              <div class="footer__contact-text">
+                <p>
+                  <span class="footer__contact-name">Email:</span>
+                  <a class="footer__contact-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
+                </p>
+              </div>
             </li>
+
           </ul>
         </address>
 
@@ -248,7 +243,11 @@
 
           <div class="footer__item">
             <div class="footer__title">newsletter</div>
-            <p class="footer__text">Subscribe by our newsletter and get update protidin.</p>
+            <div class="footer__text">
+              <p>
+                Subscribe by our newsletter and get update protidin
+              </p>
+            </div>
             <form class="footer__form">
               <label for="footer__form-text">
                 <span class="sr-only">enter email</span>
@@ -261,9 +260,11 @@
       </div>
 
       <div class="footer__bottom">
-        <p class="footer__copy">
-          ©2020 CopyRight Example. All rights reserved.
-        </p>
+        <div class="footer__bottom-text">
+          <p class="footer__copy">
+            ©2020 CopyRight Example. All rights reserved.
+          </p>
+        </div>
         <ul class="footer__bottom-list">
           <li class="footer__bottom-item">
             <a class="footer__link" href="#">Home</a>

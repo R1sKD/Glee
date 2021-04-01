@@ -56,3 +56,48 @@ $black: #262626;
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
+
+@mixin line-camp {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin _1670 {
+  @media (max-width: 1670px) {
+    @content;
+  }
+}
+
+@mixin _1366 {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin _1024 {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+
+@mixin _1170 {
+  @media (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin _768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin _600 {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

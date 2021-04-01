@@ -7,18 +7,19 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  
+
   &__link {
     display: inline-block;
+    background-image: url(../../images/video-play.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    object-fit: cover;
     width: 127px;
     height: 127px;
     border-radius: 50%;
     outline: transparent;
-    transition: background-color 0.3s,
-    box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
 
     &:after {
       position: absolute;
@@ -30,16 +31,15 @@
     }
 
     &:focus {
-      background-color: $bg-dark;
+      box-shadow: 0px 0px 16px 6px rgba(34, 60, 80, 0.2);
     }
 
     &:hover {
-      background-color: $dark-blue;
+      background-color: $blue;
     }
 
     &:active {
       background-color: $dark-blue;
-      box-shadow: 0px 0px 55px 23px rgba(34, 60, 80, 0.2) inset;
     }
   }
 }

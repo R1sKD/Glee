@@ -31,11 +31,8 @@
   }
 
   &__year-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include line-camp;
     -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
   }
 
   &__year-text,
@@ -48,11 +45,8 @@
 
   &__subtitle {
     margin-bottom: 25px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include line-camp;
     -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
   }
 
   &__text {
@@ -87,7 +81,7 @@
     &--projects::before {
       background-image: url('../../images/icons/about-projects.png');
     }
-    
+
     &--revenue::before {
       background-image: url('../../images/icons/about-revenue.png');
     }
@@ -162,8 +156,7 @@
     display: block;
     font-size: 36px;
     max-width: 210px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include line-camp;
   }
 
   &__text {
@@ -171,11 +164,8 @@
     font-size: 18px;
     line-height: 1.9;
     max-width: 210px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    @include line-camp;
+    ;
   }
 }
 
@@ -193,29 +183,20 @@
 
   &__title {
     margin-bottom: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    @include line-camp;
   }
 
   &__text {
     line-height: 1.9;
     @extend %Rubik-400;
     margin-bottom: 35px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include line-camp;
     -webkit-line-clamp: 18;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
   }
 
   &__btn {
     width: 170px;
-    height: 50px;
     border-radius: 2px;
-    padding: 5px 0 0 14px;
   }
 
   &__pictures {
@@ -223,7 +204,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 30px;
-    row-gap: 100px; 
+    row-gap: 100px;
   }
 
   &__photo {
@@ -257,22 +238,15 @@
     line-height: 1.2;
     color: $dark-blue;
     margin-bottom: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include line-camp;
     -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
   }
 
   &__prof {
     line-height: 1.9;
     color: #565872;
     @extend %Rubik-400;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    @include line-camp;
     color: #565872;
   }
 

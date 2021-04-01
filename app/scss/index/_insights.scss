@@ -1,0 +1,130 @@
+.insights {
+  padding-top: 115px;
+  position: relative;
+  z-index: 2;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    max-width: 800px;
+    @include line-camp;
+  }
+
+  &__link {
+    color: $black;
+    max-width: 370px;
+    @include line-camp;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border: 1px solid $bg-dark;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $dark-blue;
+    }
+
+    &:active {
+      color: $bg-dark;
+    }
+  }
+
+  &__svg {
+    margin-left: 10px;
+    width: 6px;
+    height: 11px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.insights-card {
+  background-color: #ffffff;
+  max-width: 370px;
+  width: 100%;
+  min-height: 420px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+  &__img {
+    margin-bottom: 35px;
+    max-width: 370px;
+    max-height: 250px;
+    object-fit: cover;
+    position: relative;
+  }
+
+  &__info {
+    padding: 0 20px 20px 29px;
+    position: relative;
+  }
+
+  &__info-link {
+    position: absolute;
+    top: -52px;
+    left: 30px;
+    width: 105px;
+    height: 130px;
+    border-radius: 15px;
+    padding: 4px 15px;
+    max-height: 30px;
+    @include line-camp;
+  }
+
+  &__data-link {
+    color: #222933;
+    transition: color 0.3s;
+    display: inline-block;
+    @extend %Rubik-400;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 2.5;
+    margin-right: 30px;
+    max-width: 118px;
+    max-height: 19px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:focus {
+      color: #000;
+    }
+
+    &:hover {
+      color: $bg-dark;
+    }
+
+    &:active {
+      color: $bg-light;
+    }
+  }
+
+  &__data-svg {
+    width: 6px;
+    height: 9px;
+  }
+
+  &__text {
+    @extend %DMSans-500;
+    max-width: 297px;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $black;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    @include line-camp;
+    -webkit-line-clamp: 3;
+  }
+}

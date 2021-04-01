@@ -7,11 +7,7 @@
     @extend %Rubik-300;
     font-size: 36px;
     color: #222933;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    @include line-camp;
   }
 }
 
@@ -51,6 +47,7 @@
     line-height: 1.6;
     color: rgba(34, 41, 51, 0.6);
     padding-bottom: 3px;
+    @include line-camp;
     
     &:focus {
       border: 1px solid #191919;

@@ -1,13 +1,21 @@
 $(function(){
-  
+
   $('.top-slider__inner').slick({
     arrows: false,
     dots: true,
   });
 
-  $('.bottom-slider__inner').slick({
-    arrows: false,
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
   });
+  
+
+  $('.partners-slider__list').slick({
+    arrows: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+  });
+
 
   var containerEl1 = document.querySelector('[data-ref="products__list"]');
   var containerEl2 = document.querySelector('[data-ref="design__list"]');

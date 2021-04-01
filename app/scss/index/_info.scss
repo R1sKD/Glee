@@ -1,19 +1,20 @@
 .info {
-  max-width: 1770px;
-  padding: 35px 0;
-  background-color: $bg-light;
-  margin: 0 auto;
+  &__inner {
+    background-color: $bg-light;
+  }
 
-  &__items {
+  &__list {
     display: flex;
-    justify-content: space-between;
-    line-height: 2;
   }
 
   &__item {
-    max-width: 595px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    align-items: center;
+    max-width: 590px;
     width: 100%;
-    padding: 0 150px 0 220px;
+    min-height: 170px;
     position: relative;
     border-right: 1px solid #e8e4df;
 
@@ -22,24 +23,17 @@
     }
   }
 
-  &__title {
-    font-size: 18px;
-    color: #414141;
-    max-width: 200px;
-    max-height: 140px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+  &__content {
+    position: relative;
+    padding-left: 80px;
 
     &:after {
       content: '';
       width: 20px;
       height: 20px;
       position: absolute;
-      left: 176px;
-      top: 46px;
+      left: 30px;
+      top: 40px;
       background-repeat: no-repeat;
       background-image: url(../images/icons/circle.png);
     }
@@ -49,48 +43,48 @@
       width: 50px;
       height: 50px;
       position: absolute;
-      left: 140px;
-      top: 20px;
+      left: 0;
+      top: 6px;
       background-repeat: no-repeat;
     }
 
     &--support {
-
       &:before {
         background-image: url(../images/icons/support-24.png);
       }
     }
 
     &--delivery {
-
       &:before {
+        top: 18px;
         background-image: url(../images/icons/delivery-truck.png);
-      }
-
-      &:after {
-        top: 40px;
       }
     }
 
     &--payment {
-
       &:before {
         background-image: url(../images/icons/credit-card.png);
       }
     }
   }
 
+  &__title {
+    font-size: 18px;
+    line-height: 2.1;
+    color: #414141;
+    max-width: 200px;
+    max-height: 140px;
+    @include line-camp;
+  }
+
   &__text {
     font-weight: 400;
     font-size: 16px;
+    line-height: 1.9;
     color: #585858;
     width: 215px;
     max-width: 250px;
     max-height: 70px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    @include line-camp;
   }
 }
