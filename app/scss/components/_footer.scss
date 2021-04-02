@@ -8,6 +8,15 @@
     padding: 75px 0 70px 0;
     border-bottom: 1px solid #dae4e9;
     display: flex;
+
+    @include _1170 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include _480 {
+      padding-bottom: 20px;
+    }
   }
 
   &__items {
@@ -16,11 +25,19 @@
     align-items: flex-start;
     max-width: 870px;
     width: 100%;
+
+    @include _600 {
+      flex-direction: column;
+    }
   }
 
   &__item {
     max-width: 275px;
     overflow: hidden;
+
+    @include _600 {
+      margin-bottom: 30px;
+    }
   }
 
   &__logo {
@@ -31,6 +48,11 @@
     font-style: normal;
     max-width: 200px;
     margin-right: 100px;
+
+    @include _1170 {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__contact-item {
@@ -83,20 +105,20 @@
     max-width: 120px;
   }
 
-    &__link,
-    &__contact-link {
-      &:focus {
-        color: $dark-blue;
-      }
-
-      &:hover {
-        color: #191919;
-      }
-
-      &:active {
-        color: $bg-dark;
-      }
+  &__link,
+  &__contact-link {
+    &:focus {
+      color: $dark-blue;
     }
+
+    &:hover {
+      color: #191919;
+    }
+
+    &:active {
+      color: $bg-dark;
+    }
+  }
 
   &__text {
     max-width: 275px;
@@ -129,17 +151,30 @@
     overflow: hidden;
   }
 
-  &__bottom {
+  &__copy {
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
+
+    @include _600 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
-  &__bottom-list {
+  &__text {
+    max-width: 320px;
+    @include line-camp;
+    -webkit-line-clamp: 2;
+  }
+
+  &__copy-list {
     display: flex;
+    align-items: center;
   }
 
-  &__bottom-item {
+  &__copy-item {
     border-right: 1px solid #7b7b7b;
     padding: 0 13px;
 

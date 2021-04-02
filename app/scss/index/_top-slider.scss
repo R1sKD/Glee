@@ -1,5 +1,9 @@
 .top-slider {
 
+  @include _480 {
+    display: none;
+  }
+
   &__wrapper {
     padding: 0 170px;
     background-color: $bg-dark;
@@ -10,7 +14,7 @@
     }
 
     @include _600 {
-      display: none;
+      padding: 0 10px;
     }
   }
 

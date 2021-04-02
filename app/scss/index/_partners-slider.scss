@@ -6,6 +6,10 @@
   align-items: flex-end;
   padding-bottom: 80px;
 
+  @include _1024 {
+    display: none;
+  }
+
   &__item {
     min-height: 90px;
     display: flex;

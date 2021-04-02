@@ -1,4 +1,9 @@
 .info {
+
+  @include _600 {
+    display: none;
+  }
+
   &__inner {
     background-color: $bg-light;
   }
@@ -27,6 +32,12 @@
     position: relative;
     padding-left: 80px;
 
+    @include _1024 {
+      padding-left: 5px;
+      padding-right: 5px;
+
+    }
+
     &:after {
       content: '';
       width: 20px;
@@ -36,6 +47,10 @@
       top: 40px;
       background-repeat: no-repeat;
       background-image: url(../images/icons/circle.png);
+
+      @include _1024 {
+        display: none;
+      }
     }
 
     &:before {
@@ -46,6 +61,10 @@
       left: 0;
       top: 6px;
       background-repeat: no-repeat;
+
+      @include _1024 {
+        display: none;
+      }
     }
 
     &--support {
@@ -75,6 +94,10 @@
     max-width: 200px;
     max-height: 140px;
     @include line-camp;
+
+    @include _1024 {
+      font-size: 15px;
+    }
   }
 
   &__text {
@@ -82,9 +105,14 @@
     font-size: 16px;
     line-height: 1.9;
     color: #585858;
-    width: 215px;
-    max-width: 250px;
+    max-width: 235px;
+    width: 100%;
     max-height: 70px;
     @include line-camp;
+    -webkit-line-clamp: 2;
+
+    @include _1024 {
+      font-size: 14px;
+    }
   }
 }

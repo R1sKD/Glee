@@ -77,15 +77,14 @@ $black: #262626;
   }
 }
 
-@mixin _1024 {
-  @media (max-width: 1024px) {
+@mixin _1170 {
+  @media (max-width: 1170px) {
     @content;
   }
 }
 
-
-@mixin _1170 {
-  @media (max-width: 1170px) {
+@mixin _1024 {
+  @media (max-width: 1024px) {
     @content;
   }
 }
@@ -98,6 +97,12 @@ $black: #262626;
 
 @mixin _600 {
   @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin _480 {
+  @media (max-width: 480px) {
     @content;
   }
 }

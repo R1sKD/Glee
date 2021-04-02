@@ -128,6 +128,14 @@ body {
   color: #191919;
   text-align: center;
   @include line-camp;
+
+  @include _600 {
+    font-size: 24px;
+  }
+
+  @include _480 {
+    font-size: 16px;
+  }
 }
 
 .subtitle {
@@ -141,6 +149,10 @@ body {
   &__item {
     margin-right: 30px;
     @include line-camp;
+
+    @include _480 {
+      margin-right: 10px;
+    }
 
     &:last-child {
       margin-right: 0;

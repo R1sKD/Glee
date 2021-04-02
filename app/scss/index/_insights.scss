@@ -9,11 +9,20 @@
     align-items: center;
     position: relative;
     margin-bottom: 35px;
+
+    @include _1170 {
+      justify-content: center;
+    }
   }
 
   &__title {
     max-width: 800px;
     @include line-camp;
+    -webkit-line-clamp: 2;
+
+    @include _1170 {
+      margin-right: 40px;
+    }
   }
 
   &__link {
@@ -45,6 +54,30 @@
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @include _1170 {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    margin-right: 10px;
+    max-width: 370px;
+    width: 100%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include _1170 {
+      margin-bottom: 30px;
+    }
+
+    @include _768 {
+      margin-right: 0;
+    }
   }
 }
 
@@ -59,6 +92,7 @@
   &__img {
     margin-bottom: 35px;
     max-width: 370px;
+    width: 100%;
     max-height: 250px;
     object-fit: cover;
     position: relative;
