@@ -18,11 +18,16 @@
 
       <nav class="nav">
 
-        <a class="logo" href="#">
+        <a class="logo header__logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo Glee">
         </a>
 
         <div class="menu">
+          <button class="menu__btn">
+            <svg class="menu__img">
+              <use xlink:href='sprite/sprite.svg#menu'></use>
+            </svg>
+          </button>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">Home +</a>
@@ -46,8 +51,8 @@
         </div>
 
         <ul class="product-nav">
-          <li class="product-nav__list">
-            <button class="product-nav__element">
+          <li class="product-nav__item">
+            <button class="product-nav__action">
               <span class="sr-only">Search products</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--search'></use>
@@ -55,8 +60,8 @@
             </button>
           </li>
 
-          <li class="product-nav__list">
-            <a class="product-nav__element product-nav__element--header-heart" href="#">
+          <li class="product-nav__item">
+            <a class="product-nav__action product-nav__action--header-heart" href="#">
               <span class="sr-only">Liked products</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--heart'></use>
@@ -65,8 +70,8 @@
             </a>
           </li>
 
-          <li class="product-nav__list">
-            <a class="product-nav__element product-nav__element--header-cart" href="#">
+          <li class="product-nav__item">
+            <a class="product-nav__action product-nav__action--header-cart" href="#">
               <span class="sr-only">Added products</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--cart'></use>
@@ -75,8 +80,8 @@
             </a>
           </li>
 
-          <li class="product-nav__list">
-            <button class="product-nav__element">
+          <li class="product-nav__item product-nav__item--cab">
+            <button class="product-nav__action">
               <span class="sr-only">Enter to product-nav cabinet</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--cab'></use>
@@ -120,7 +125,7 @@
       </h2>
       <div class="container">
         <div class="about__inner">
-          <img class="about__img" src="../../images/about.jpg" alt="about img">
+          <div class="about__img"></div>
 
           <div class="about-content">
             <div class="about-content__experience">
@@ -184,7 +189,7 @@
       </div>
     </section>
 
-    <section class="team">
+   <section class="team">
       <h2 class="sr-only">
         About glee team
       </h2>
@@ -208,7 +213,7 @@
               <div class="team__info">
                 <div class="team__data">
                   <h3 class="team__name">Eliza Elliot</h3>
-                  <span class="team__prof">Commodo tempor </span>
+                  <span class="team__prof">Commodo tempor</span>
                 </div>
                 <div class="team__social">
                   <a class="team__link" href="#">
@@ -308,7 +313,7 @@
       </div>
     </section>
 
-    <section class="insights">
+   <section class="insights">
       <h2 class="sr-only">
         Glee Insights & Articles
       </h2>
@@ -520,7 +525,6 @@
           </ul>
         </address>
 
-
         <div class="footer__items">
           <div class="footer__item footer__item--services">
             <div class="footer__title">Services</div>
@@ -579,23 +583,23 @@
         </div>
       </div>
 
-      <div class="footer__bottom">
-        <div class="footer__bottom-text">
-          <p class="footer__copy">
+      <div class="footer__copy">
+        <div class="footer__text">
+          <p>
             ©2020 CopyRight Example. All rights reserved.
           </p>
         </div>
-        <ul class="footer__bottom-list">
-          <li class="footer__bottom-item">
+        <ul class="footer__copy-list">
+          <li class="footer__copy-item">
             <a class="footer__link" href="#">Home</a>
           </li>
-          <li class="footer__bottom-item">
+          <li class="footer__copy-item">
             <a class="footer__link" href="#">About</a>
           </li>
-          <li class="footer__bottom-item">
+          <li class="footer__copy-item">
             <a class="footer__link" href="#">Blog</a>
           </li>
-          <li class="footer__bottom-item">
+          <li class="footer__copy-item">
             <a class="footer__link" href="#">Contact</a>
           </li>
         </ul>

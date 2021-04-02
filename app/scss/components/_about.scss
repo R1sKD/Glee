@@ -1,21 +1,44 @@
 .about {
   padding: 122px 0 60px 0;
 
+  @include _1024 {
+    padding: 30px 0 30px 0;
+  }
+
   &__inner {
     display: flex;
     margin-bottom: 120px;
+
+    @include _1024 {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
   }
 
   &__img {
+    background-image: url(../../images/about.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     max-width: 570px;
-    max-height: 675px;
+    width: 100%;
+    max-height: 676px;
     object-fit: cover;
+
+    @include _1024 {
+      display: none;
+    }
   }
 }
 
 .about-content {
+  max-width: 600px;
   padding: 30px 0 80px 45px;
   color: $dark-blue;
+
+  @include _1024 {
+    padding: 0;
+  }
 
   &__experience {
     display: flex;
@@ -61,12 +84,21 @@
 
   &__info-list {
     display: flex;
+
+    @include _768 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__info-item {
     padding-left: 63px;
     margin-right: 30px;
     position: relative;
+
+    @include _768 {
+      margin-bottom: 30px;
+    }
 
     &::before {
       content: '';
@@ -106,10 +138,14 @@
   &__list {
     display: flex;
     justify-content: space-around;
+
+    @include _768 {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    padding-top: 100px;
+    padding: 100px 10px 0 10px;
     position: relative;
 
     &::after {
@@ -174,11 +210,26 @@
 
   &__inner {
     display: flex;
+
+    @include _1170 {
+      justify-content: space-around;
+    }
+
+    @include _768 {
+      display: block;
+    }
   }
 
   &__about {
     max-width: 305px;
     margin-right: 95px;
+
+    @include _768 {
+      margin-bottom: 30px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -192,6 +243,10 @@
     margin-bottom: 35px;
     @include line-camp;
     -webkit-line-clamp: 18;
+
+    @include _768 {
+      text-align: left;
+    }
   }
 
   &__btn {
@@ -205,10 +260,25 @@
     grid-template-rows: repeat(2, 1fr);
     column-gap: 30px;
     row-gap: 100px;
+
+    @include _1170 {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    @include _768 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__photo {
     position: relative;
+
+    @include _768 {
+      margin-bottom: 30px;
+    }
   }
 
   &__img {
@@ -227,6 +297,10 @@
     bottom: -66px;
     left: 0;
     box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+
+    @include _480 {
+      max-width: 290px;
+    }
   }
 
   &__data {
@@ -248,6 +322,7 @@
     @extend %Rubik-400;
     @include line-camp;
     color: #565872;
+    -webkit-line-clamp: 2;
   }
 
   &__social {

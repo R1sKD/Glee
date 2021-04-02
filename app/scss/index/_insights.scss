@@ -3,6 +3,10 @@
   position: relative;
   z-index: 2;
 
+  @include _768 {
+    padding-top: 30px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -153,6 +157,7 @@
   &__text {
     @extend %DMSans-500;
     max-width: 297px;
+    min-height: 72px;
     font-size: 18px;
     line-height: 1.4;
     color: $black;

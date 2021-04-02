@@ -17,6 +17,10 @@
 
   &__list {
     display: flex;
+
+    @include _1024 {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
