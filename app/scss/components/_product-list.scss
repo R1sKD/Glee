@@ -56,6 +56,7 @@
     text-transform: uppercase;
     position: relative;
     margin-bottom: 30px;
+    @include line-camp;
 
     &:after {
       content: '';
@@ -86,6 +87,19 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    transition: background-color 0.3s;
+
+    &:focus {
+      background-color: #ddf3ff;
+    }
+
+    &:hover {
+      background-color: #edf1f4;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+    }
 
     &::after {
       content: '';
@@ -102,6 +116,7 @@
 
   &__category-text {
     color: $dark-blue;
+    @include line-camp;
   }
 
   &__price {
@@ -172,6 +187,23 @@
     justify-content: space-between;
     padding: 9px 24px 9px 12px;
     border-radius: 3px;
+    transition: background-color 0.3s;
+
+    &:focus {
+      background-color: #ddf3ff;
+    }
+
+    &:hover {
+      background-color: #edf1f4;
+    }
+
+    &:active {
+      background-color: #ddf3ff;
+    }
+  }
+
+  &__brand-text {
+    @include line-camp;
   }
 
   &__brand-text+.product-filters__brand-text {
@@ -192,6 +224,19 @@
     display: flex;
     @extend %Rubik-400;
     color: $dark-blue;
+    border: 1px solid transparent;
+
+    &:focus {
+      border: 1px solid #000;
+    }
+
+    &:hover {
+      background-color: #edf1f4;
+    }
+
+    &:active {
+      background-color: #ddf3ff;
+    }
   }
 
   &__photo {
@@ -208,10 +253,14 @@
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 8px;
+    @include line-camp;
+    max-width: 150px;
   }
 
   &__price {
     font-size: 15px;
+    @include line-camp;
+    max-width: 150px;
   }
 
   .jq-ry-container {
@@ -231,6 +280,19 @@
     border: none;
     background-color: transparent;
     margin-right: 15px;
+    border: 1px solid transparent;
+
+    &:focus {
+      border: 1px solid #000;
+    }
+
+    &:hover {
+      background-color: #edf1f4;
+    }
+
+    &:active {
+      background-color: #ddf3ff;
+    }
 
     &.product-content__button--active {
       .product-content__svg {
@@ -378,6 +440,7 @@
           color: #333333;
           @extend %Rubik-400;
           max-height: 100%;
+          max-width: 400px;
         }
 
         .product-card__star {
@@ -387,6 +450,7 @@
 
         &__price {
           display: none;
+          max-width: 400px;
         }
 
         &__price-list {
@@ -397,6 +461,8 @@
           @extend %Rubik-400;
           max-height: 100%;
           margin-bottom: 30px;
+          max-width: 400px;
+          @include line-camp;
         }
 
         &__text {
@@ -406,6 +472,9 @@
           color: $dark-blue;
           @extend %Rubik-400;
           margin-bottom: 30px;
+          max-width: 400px;
+          @include line-camp;
+          -webkit-line-clamp: 5;
         }
 
         &__box {
