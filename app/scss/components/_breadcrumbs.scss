@@ -36,12 +36,8 @@
       color: rgba(34, 41, 51, 0.6);
     }
 
-    &:last-child {
-      padding-right: 0;
-      border-bottom: 1px solid #191919;
-      &:after {
-        display: none;
-      }
+    &:last-child:after {
+      display: none;
     }
   }
 
@@ -52,13 +48,13 @@
     color: rgba(34, 41, 51, 0.6);
     padding-bottom: 3px;
     @include line-camp;
-    
+
     &:focus {
-      border: 1px solid #191919;
+      color: $dark-blue;
     }
 
     &:hover {
-      border-bottom: 1px solid #191919;
+      color: #191919;
     }
 
     &:active {

@@ -47,7 +47,7 @@
   &__contact {
     font-style: normal;
     max-width: 200px;
-    margin-right: 100px;
+    margin-right: 108px;
 
     @include _1170 {
       margin-right: 15px;
@@ -138,6 +138,7 @@
     background-color: $bg-light;
     border: none;
     padding: 10px 10px;
+    width: 170px;
   }
 
   &__form-btn {
@@ -180,6 +181,7 @@
 
     &:last-child {
       border-right: none;
+      padding-right: 0;
     }
   }
 }
