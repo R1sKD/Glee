@@ -148,17 +148,6 @@
     padding: 100px 10px 0 10px;
     position: relative;
 
-    &::after {
-      position: absolute;
-      content: '';
-      width: 35px;
-      height: 35px;
-      bottom: 100px;
-      right: 35px;
-      border-radius: 50%;
-      background-color: rgba($color: #a3bbc8, $alpha: 0.75);
-    }
-
     &::before {
       position: absolute;
       content: '';
@@ -171,20 +160,20 @@
     }
 
     &--rate::before {
-      background-image: url(../../images/icons/about-rate.svg);
+      background-image: url(../../sprite/sprite.svg#icons--about-rate);
     }
 
     &--delivery::before {
-      background-image: url(../../images/icons/about-delivery.svg);
+      background-image: url(../../sprite/sprite.svg#icons--about-delivery);
       top: 40px;
     }
 
     &--time::before {
-      background-image: url(../../images/icons/about-time.svg);
+      background-image: url(../../sprite/sprite.svg#icons--about-time);
     }
 
     &--brands::before {
-      background-image: url(../../images/icons/about-brands.svg);
+      background-image: url(../../sprite/sprite.svg#icons--about-brands);
     }
   }
 
@@ -283,6 +272,8 @@
 
   &__img {
     object-fit: cover;
+    height: 321px;
+    max-width: 320px;
   }
 
   &__info {

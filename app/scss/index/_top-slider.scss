@@ -1,67 +1,32 @@
 .top-slider {
-
   @include _480 {
     display: none;
   }
 
-  &__wrapper {
-    padding: 0 170px;
+  &__inner {
     background-color: $bg-dark;
-    position: relative;
-
-    @include _1024 {
-      padding: 0 100px;
-    }
-
-    @include _600 {
-      padding: 0 10px;
-    }
   }
 
   &__item {
-    position: relative;
-  }
-
-  &__box {
     height: 820px;
-    padding: 0 130px;
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: center;
     align-items: center;
-
-    @include _1670 {
-      height: 500px;
-    }
-
-    @include _1366 {
-      padding: 0;
-    }
 
     @include _1024 {
       height: 400px;
-    }
-
-    &:after {
-      content: '';
-      width: 610px;
-      height: 645px;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background-image: url(../images/top-slider/bg-slider.png);
-      background-repeat: no-repeat;
-      z-index: -1;
-
-      @include _1670 {
-        background-image: none;
-      }
     }
   }
 
   &__content {
     color: $dark-blue;
     padding-bottom: 50px;
+    margin-right: 58px;
+    padding-left: 180px;
+
+    @include _1024 {
+      padding-left: 50px;
+    }
   }
 
   &__title {
@@ -74,9 +39,9 @@
     width: 100%;
     margin-bottom: 20px;
     @include line-camp;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
 
-    @include _1670 {
+    @include _1366 {
       font-size: 52px;
     }
 
@@ -99,11 +64,7 @@
     overflow: hidden;
     max-height: 300px;
     @include line-camp;
-    -webkit-line-clamp: 6;
-
-    @include _1670 {
-      font-size: 14px;
-    }
+    -webkit-line-clamp: 5;
   }
 
   &__btn {
@@ -118,13 +79,39 @@
     }
   }
 
+  &__photo {
+    position: relative;
+    padding-right: 180px;
+
+    @include _1024 {
+      padding-right: 50px;
+    }
+
+    &:after {
+      content: '';
+      width: 610px;
+      height: 645px;
+      position: absolute;
+      left: 18%;
+      top: 54%;
+      transform: translateY(-50%);
+      background-image: url(../images/top-slider/bg-slider.png);
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @include _1366 {
+        display: none;
+      }
+    }
+  }
+
   &__img {
     max-width: 830px;
     max-height: 640px;
     object-fit: cover;
 
-    @include _1670 {
-      max-width: 350px;
+    @include _1366 {
+      max-width: 500px;
     }
 
     @include _1024 {

@@ -87,21 +87,10 @@
     outline: transparent;
     @include line-camp;
     -webkit-line-clamp: 1;
+    @extend %link-style;
 
     @include _1170 {
       padding: 30px;
-    }
-
-    &:focus {
-      border: 1px solid $bg-dark;
-    }
-
-    &:hover {
-      border-bottom: 1px solid $dark-blue;
-    }
-
-    &:active {
-      color: $bg-dark;
     }
   }
 }
@@ -153,7 +142,7 @@
     outline: transparent;
     transition: border-color 0.3s, background-color 0.3s, fill 0.3s;
 
-    &--header-heart {
+    &--heart {
       width: 90px;
       border-radius: 23px 0 0 23px;
       position: relative;
@@ -170,10 +159,15 @@
       }
     }
 
-    &--header-cart {
+    &--cart {
       width: 90px;
       border-radius: 0 23px 23px 0;
       background-color: $bg-dark;
+    }
+
+    &--card {
+      background-color: #ffffff;
+      fill: $light-blue;
     }
 
     &:focus {

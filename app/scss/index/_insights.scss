@@ -33,19 +33,10 @@
     color: $black;
     max-width: 370px;
     @include line-camp;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.3s;
-
-    &:focus {
-      border: 1px solid $bg-dark;
-    }
+    @extend %link-style;
 
     &:hover {
-      border-bottom: 1px solid $dark-blue;
-    }
-
-    &:active {
-      color: $bg-dark;
+      color: $light-blue;
     }
   }
 
@@ -95,6 +86,7 @@
 
   &__img {
     margin-bottom: 35px;
+    border-radius: 5px;
     max-width: 370px;
     width: 100%;
     max-height: 250px;
@@ -112,11 +104,11 @@
     top: -52px;
     left: 30px;
     width: 105px;
-    height: 130px;
     border-radius: 15px;
     padding: 4px 15px;
     max-height: 30px;
-    @include line-camp;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   &__data-link {
@@ -131,6 +123,7 @@
     max-width: 118px;
     max-height: 19px;
     overflow: hidden;
+    @extend %link-style;
 
     &:last-child {
       margin-right: 0;

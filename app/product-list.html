@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glee | Home Page</title>
+  <title>Glee | Product list</title>
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
@@ -15,9 +15,7 @@
 
   <header class="header">
     <div class="container container--big">
-
       <nav class="nav">
-
         <a class="logo header__logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo Glee">
         </a>
@@ -52,7 +50,7 @@
 
         <ul class="product-nav">
           <li class="product-nav__item">
-            <button class="product-nav__action">
+            <button class="product-nav__action" type="button">
               <span class="sr-only">Search products</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--search'></use>
@@ -61,8 +59,8 @@
           </li>
 
           <li class="product-nav__item">
-            <a class="product-nav__action product-nav__action--header-heart" href="#">
-              <span class="sr-only">Liked products</span>
+            <a class="product-nav__action product-nav__action--heart" href="#">
+              <span class="sr-only">go to favourite products</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--heart'></use>
               </svg>
@@ -71,8 +69,8 @@
           </li>
 
           <li class="product-nav__item">
-            <a class="product-nav__action product-nav__action--header-cart" href="#">
-              <span class="sr-only">Added products</span>
+            <a class="product-nav__action product-nav__action--cart" href="#">
+              <span class="sr-only">go to the cart</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--cart'></use>
               </svg>
@@ -80,8 +78,8 @@
             </a>
           </li>
 
-          <li class="product-nav__item product-nav__item--cab">
-            <button class="product-nav__action">
+          <li class="product-nav__item">
+            <button class="product-nav__action" type="button">
               <span class="sr-only">Enter to product-nav cabinet</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--cab'></use>
@@ -90,7 +88,6 @@
           </li>
         </ul>
       </nav>
-
     </div>
   </header>
 
@@ -316,12 +313,12 @@
             </div>
 
             <ul class="product-content__list">
-
               <li class="product-content__item">
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/1.png" alt="Wooden chair">
-                    <img class="product-card__img--big" src="images/content/products/product-list/1.png" alt="Wooden chair">
+                    <img class="product-card__img--big" src="images/content/products/product-list/1.png"
+                      alt="Wooden chair">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">Wooden chair</h3>
@@ -353,36 +350,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -390,7 +385,8 @@
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/2.png" alt="white chair">
-                    <img class="product-card__img--big" src="images/content/products/product-list/2.png" alt="white chair">
+                    <img class="product-card__img--big" src="images/content/products/product-list/2.png"
+                      alt="white chair">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">White chair</h3>
@@ -422,36 +418,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -492,36 +486,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -529,7 +521,8 @@
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/4.png" alt="Wooden chair">
-                    <img class="product-card__img--big" src="images/content/products/product-list/4.png" alt="Wooden chair">
+                    <img class="product-card__img--big" src="images/content/products/product-list/4.png"
+                      alt="Wooden chair">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">Wooden chair</h3>
@@ -561,36 +554,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -598,7 +589,8 @@
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/5.png" alt="White chair">
-                    <img class="product-card__img--big" src="images/content/products/product-list/5.png" alt="White chair">
+                    <img class="product-card__img--big" src="images/content/products/product-list/5.png"
+                      alt="White chair">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">White chair</h3>
@@ -630,36 +622,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -667,7 +657,8 @@
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/4.png" alt="Retro table">
-                    <img class="product-card__img--big" src="images/content/products/product-list/4.png" alt="Retro table">
+                    <img class="product-card__img--big" src="images/content/products/product-list/4.png"
+                      alt="Retro table">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">Retro table</h3>
@@ -699,36 +690,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -736,7 +725,8 @@
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/6.png" alt="Wooden chair">
-                    <img class="product-card__img--big" src="images/content/products/product-list/6.png" alt="Wooden chair">
+                    <img class="product-card__img--big" src="images/content/products/product-list/6.png"
+                      alt="Wooden chair">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">Wooden chair</h3>
@@ -768,36 +758,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -805,7 +793,8 @@
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/7.png" alt="White chair">
-                    <img class="product-card__img--big" src="images/content/products/product-list/7.png" alt="White chair">
+                    <img class="product-card__img--big" src="images/content/products/product-list/7.png"
+                      alt="White chair">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">White chair</h3>
@@ -837,36 +826,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -874,7 +861,8 @@
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/8.png" alt="Retro table">
-                    <img class="product-card__img--big" src="images/content/products/product-list/8.png" alt="Retro table">
+                    <img class="product-card__img--big" src="images/content/products/product-list/8.png"
+                      alt="Retro table">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">Retro table</h3>
@@ -906,36 +894,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -943,7 +929,8 @@
                 <article class="product-card">
                   <div class="product-card__photo">
                     <img class="product-card__img" src="images/content/products/11.png" alt="Whooden chair">
-                    <img class="product-card__img--big" src="images/content/products/product-list/11.png" alt="Whooden chair">
+                    <img class="product-card__img--big" src="images/content/products/product-list/11.png"
+                      alt="Whooden chair">
                   </div>
                   <div class="product-card__info">
                     <h3 class="product-card__name">Whooden chair</h3>
@@ -975,36 +962,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -1045,36 +1030,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
 
@@ -1115,36 +1098,34 @@
                     </ul>
                   </div>
 
-                  <div class="product-card__icons">
-                    <ul class="product-nav">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-nav__action--search">
-                          <span class="sr-only">search products</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+                  <ul class="product-card__icons">
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">increase products size</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--search'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">add card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </a>
-                      </li>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add products to the cart</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--cart'></use>
+                        </svg>
+                      </button>
+                    </li>
 
-                      <li class="product-nav__item">
-                        <a class="product-nav__action" href="#">
-                          <span class="sr-only">Like card</span>
-                          <svg class="product-nav__svg">
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="product-nav__item">
+                      <button class="product-nav__action product-nav__action--card" type="button">
+                        <span class="sr-only">add product to the favourite list</span>
+                        <svg class="product-nav__svg product-nav__svg">
+                          <use xlink:href='sprite/sprite.svg#icons--heart'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
                 </article>
               </li>
             </ul>
@@ -1222,96 +1203,90 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-
-        <address class="footer__contact">
+        <address class="footer__box footer__box">
           <a class="logo footer__logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo Glee">
           </a>
 
-          <ul class="footer__contact-list">
-            <li class="footer__contact-item">
-              <div class="footer__contact-text">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <div class="footer__text">
                 <p>ADDRESS: 4772 Wines Lane</p>
                 <p>Houston, TX 77032</p>
               </div>
             </li>
 
-            <li class="footer__contact-item">
-              <div class="footer__contact-text">
-                <p>
-                  <span class="footer__contact-name">Telephone:</span>
-                  <a class="footer__contact-link" href="tel:+8323475843">+832-347-5843</a>
+            <li class="footer__item">
+              <div class="footer__text">
+                <p class="footer__contact">
+                  <span class="footer__phone">Telephone:</span>
+                  <a class="footer__link" href="tel:+8323475843">+832-347-5843</a>
                 </p>
               </div>
             </li>
 
-            <li class="footer__contact-item">
-              <div class="footer__contact-text">
-                <p>
-                  <span class="footer__contact-name">Email:</span>
-                  <a class="footer__contact-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
+            <li class="footer__item">
+              <div class="footer__text">
+                <p class="footer__contact">
+                  <span class="footer__email">Email:</span>
+                  <a class="footer__link" href="mailto:contact@Glee.com">contact@Glee.com</a>
                 </p>
               </div>
             </li>
-
           </ul>
         </address>
 
-        <div class="footer__items">
-          <div class="footer__item footer__item--services">
-            <div class="footer__title">Services</div>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">About us</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Return Policy</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Our Blog</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Contact Us</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Terms & Condition</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer__box footer__box">
+          <div class="footer__title">Services</div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Return Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Our Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="footer__item footer__item--account">
-            <div class="footer__title">Account</div>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Your Account</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Checkout</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Login</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Register</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer__box footer__box">
+          <div class="footer__title">Account</div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Your Account</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Checkout</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Login</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="footer__item">
-            <div class="footer__title">newsletter</div>
-            <div class="footer__text">
-              <p>
-                Subscribe by our newsletter and get update protidin
-              </p>
-            </div>
-            <form class="footer__form">
-              <label for="footer__form-text">
-                <span class="sr-only">enter email</span>
-                <input class="footer__form-text" name="email" type="email" placeholder="Email address" required>
-              </label>
-              <button class="btn footer__form-btn" type="submit">Subscribe</button>
-            </form>
+        <div class="footer__box">
+          <div class="footer__title">newsletter</div>
+          <div class="footer__text">
+            <p>
+              Subscribe by our newsletter and get update protidin
+            </p>
           </div>
+          <form class="footer__form">
+            <span class="sr-only">enter email</span>
+            <input class="footer__form-text" name="email" type="email" placeholder="Email address" required>
+            <button class="btn footer__form-btn" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
 

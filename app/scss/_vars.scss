@@ -58,6 +58,24 @@ $black: #262626;
   position: absolute;
 }
 
+%link-style {
+  outline: transparent;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+
+  &:focus {
+    border-bottom: 1px solid #000;
+  }
+
+  &:hover {
+    color: #000;
+  }
+
+  &:active {
+    color: $bg-light;
+  }
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
@@ -71,12 +89,6 @@ $black: #262626;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-@mixin _1670 {
-  @media (max-width: 1670px) {
-    @content;
-  }
 }
 
 @mixin _1366 {

@@ -8,35 +8,20 @@
     padding: 75px 0 70px 0;
     border-bottom: 1px solid #dae4e9;
     display: flex;
-
-    @include _1170 {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    @include _480 {
-      padding-bottom: 20px;
-    }
-  }
-
-  &__items {
-    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 870px;
-    width: 100%;
 
-    @include _600 {
-      flex-direction: column;
+    @include _768 {
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 
   &__item {
-    max-width: 275px;
     overflow: hidden;
+    margin-bottom: 9px;
 
-    @include _600 {
-      margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -44,39 +29,49 @@
     margin-bottom: 20px;
   }
 
-  &__contact {
+  &__box {
     font-style: normal;
-    max-width: 200px;
-    margin-right: 108px;
 
-    @include _1170 {
-      margin-right: 15px;
+    @include _1024 {
+      margin-right: 30px;
       margin-bottom: 30px;
     }
-  }
 
-  &__contact-item {
-    margin-bottom: 15px;
+    &:nth-child(2) {
+      margin-right: 60px;
 
-    &:last-child {
-      margin-bottom: 0;
+      @include _1024 {
+        margin-right: 30px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-right: 88px;
+
+      @include _1024 {
+        margin-right: 30px;
+      }
+    }
+
+    &:nth-child(4) {
+      max-width: 274px;
+      -webkit-line-clamp: 4;
     }
   }
 
-  &__contact-text {
+  &__text {
     @include line-camp;
     -webkit-line-clamp: 3;
   }
 
-  &__contact-name {
-    text-transform: uppercase;
+  &__contact {
+    display: flex;
   }
 
-  &__contact-link {
-    @extend %Rubik-400;
-    color: #7b7b7b;
-    font-size: 14px;
-    line-height: 1.7;
+  &__phone,
+  &__email {
+    text-transform: uppercase;
+    margin-right: 5px;
   }
 
   &__title {
@@ -91,39 +86,15 @@
     -webkit-line-clamp: 1;
   }
 
-  &__list-item {
-    margin-bottom: 10px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   &__link {
     color: #7b7b7b;
     @include line-camp;
     max-width: 120px;
-  }
-
-  &__link,
-  &__contact-link {
-    &:focus {
-      color: $dark-blue;
-    }
-
-    &:hover {
-      color: #191919;
-    }
-
-    &:active {
-      color: $bg-dark;
-    }
-  }
-
-  &__text {
-    max-width: 275px;
-    @include line-camp;
-    -webkit-line-clamp: 3;
+    @extend %Rubik-400;
+    @extend %link-style;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 1.7;
   }
 
   &__form {
@@ -162,12 +133,6 @@
       align-items: center;
       text-align: center;
     }
-  }
-
-  &__text {
-    max-width: 320px;
-    @include line-camp;
-    -webkit-line-clamp: 2;
   }
 
   &__copy-list {

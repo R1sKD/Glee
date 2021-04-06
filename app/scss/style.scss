@@ -4,6 +4,10 @@
 @import 'libs';
 @import 'global';
 
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumbs';
+
 @import 'index/top-slider';
 @import 'index/info';
 @import 'index/products';
@@ -12,8 +16,6 @@
 @import 'index/insights';
 @import 'index/partners-slider';
 
-@import 'components/header';
-@import 'components/footer';
-@import 'components/breadcrumbs';
-@import 'components/about';
-@import 'components/product-list';
+@import 'about/about';
+@import 'product-list/product-list';
+

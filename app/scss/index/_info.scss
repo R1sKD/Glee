@@ -38,21 +38,6 @@
 
     }
 
-    &:after {
-      content: '';
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      left: 30px;
-      top: 40px;
-      background-repeat: no-repeat;
-      background-image: url(../images/icons/circle.png);
-
-      @include _1024 {
-        display: none;
-      }
-    }
-
     &:before {
       content: '';
       width: 50px;
@@ -69,20 +54,20 @@
 
     &--support {
       &:before {
-        background-image: url(../images/icons/support-24.png);
+        background-image: url(../../sprite/sprite.svg#icons--support-24);
       }
     }
 
     &--delivery {
       &:before {
         top: 18px;
-        background-image: url(../images/icons/delivery-truck.png);
+        background-image: url(../../sprite/sprite.svg#icons--delivery-truck);
       }
     }
 
     &--payment {
       &:before {
-        background-image: url(../images/icons/credit-card.png);
+        background-image: url(../../sprite/sprite.svg#icons--credit-card);
       }
     }
   }

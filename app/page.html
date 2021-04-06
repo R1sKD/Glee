@@ -15,9 +15,7 @@
 
   <header class="header">
     <div class="container container--big">
-
       <nav class="nav">
-
         <a class="logo header__logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo Glee">
         </a>
@@ -52,7 +50,7 @@
 
         <ul class="product-nav">
           <li class="product-nav__item">
-            <button class="product-nav__action">
+            <button class="product-nav__action" type="button">
               <span class="sr-only">Search products</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--search'></use>
@@ -61,8 +59,8 @@
           </li>
 
           <li class="product-nav__item">
-            <a class="product-nav__action product-nav__action--header-heart" href="#">
-              <span class="sr-only">Liked products</span>
+            <a class="product-nav__action product-nav__action--heart" href="#">
+              <span class="sr-only">go to favourite products</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--heart'></use>
               </svg>
@@ -71,8 +69,8 @@
           </li>
 
           <li class="product-nav__item">
-            <a class="product-nav__action product-nav__action--header-cart" href="#">
-              <span class="sr-only">Added products</span>
+            <a class="product-nav__action product-nav__action--cart" href="#">
+              <span class="sr-only">go to the cart</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--cart'></use>
               </svg>
@@ -80,8 +78,8 @@
             </a>
           </li>
 
-          <li class="product-nav__item product-nav__item--cab">
-            <button class="product-nav__action">
+          <li class="product-nav__item">
+            <button class="product-nav__action" type="button">
               <span class="sr-only">Enter to product-nav cabinet</span>
               <svg class="product-nav__svg">
                 <use xlink:href='sprite/sprite.svg#icons--cab'></use>
@@ -90,7 +88,6 @@
           </li>
         </ul>
       </nav>
-
     </div>
   </header>
 
@@ -119,9 +116,12 @@
       </div>
     </section>
 
-    
+
 
     <div class="partners-slider">
+      <h2 class="sr-only">
+        partners slider
+      </h2>
       <div class="container">
         <ul class="partners-slider__list">
 
@@ -160,9 +160,8 @@
               <img class="partners-slider__img" src="images/partners-slider/5.png" alt="partner">
             </li>
           </div>
-
+        </ul>
       </div>
-      </ul>
     </div>
 
   </main>
@@ -170,96 +169,90 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-
-        <address class="footer__contact">
+        <address class="footer__box footer__box">
           <a class="logo footer__logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo Glee">
           </a>
 
-          <ul class="footer__contact-list">
-            <li class="footer__contact-item">
-              <div class="footer__contact-text">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <div class="footer__text">
                 <p>ADDRESS: 4772 Wines Lane</p>
                 <p>Houston, TX 77032</p>
               </div>
             </li>
 
-            <li class="footer__contact-item">
-              <div class="footer__contact-text">
-                <p>
-                  <span class="footer__contact-name">Telephone:</span>
-                  <a class="footer__contact-link" href="tel:+8323475843">+832-347-5843</a>
+            <li class="footer__item">
+              <div class="footer__text">
+                <p class="footer__contact">
+                  <span class="footer__phone">Telephone:</span>
+                  <a class="footer__link" href="tel:+8323475843">+832-347-5843</a>
                 </p>
               </div>
             </li>
 
-            <li class="footer__contact-item">
-              <div class="footer__contact-text">
-                <p>
-                  <span class="footer__contact-name">Email:</span>
-                  <a class="footer__contact-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
+            <li class="footer__item">
+              <div class="footer__text">
+                <p class="footer__contact">
+                  <span class="footer__email">Email:</span>
+                  <a class="footer__link" href="mailto:contact@Glee.com">contact@Glee.com</a>
                 </p>
               </div>
             </li>
-
           </ul>
         </address>
 
-        <div class="footer__items">
-          <div class="footer__item footer__item--services">
-            <div class="footer__title">Services</div>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">About us</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Return Policy</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Our Blog</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Contact Us</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Terms & Condition</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer__box footer__box">
+          <div class="footer__title">Services</div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Return Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Our Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="footer__item footer__item--account">
-            <div class="footer__title">Account</div>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Your Account</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Checkout</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Login</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Register</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer__box footer__box">
+          <div class="footer__title">Account</div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Your Account</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Checkout</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Login</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
 
-          <div class="footer__item">
-            <div class="footer__title">newsletter</div>
-            <div class="footer__text">
-              <p>
-                Subscribe by our newsletter and get update protidin
-              </p>
-            </div>
-            <form class="footer__form">
-              <label for="footer__form-text">
-                <span class="sr-only">enter email</span>
-                <input class="footer__form-text" name="email" type="email" placeholder="Email address" required>
-              </label>
-              <button class="btn footer__form-btn" type="submit">Subscribe</button>
-            </form>
+        <div class="footer__box">
+          <div class="footer__title">newsletter</div>
+          <div class="footer__text">
+            <p>
+              Subscribe by our newsletter and get update protidin
+            </p>
           </div>
+          <form class="footer__form">
+            <span class="sr-only">enter email</span>
+            <input class="footer__form-text" name="email" type="email" placeholder="Email address" required>
+            <button class="btn footer__form-btn" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
 
