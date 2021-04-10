@@ -317,7 +317,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @include _1170 {
+    @include _1366 {
       justify-content: space-around;
     }
   }
@@ -387,7 +387,7 @@
         min-height: 500px;
         box-shadow: none;
 
-        @include _1170 {
+        @include _1366 {
           flex-wrap: wrap;
           justify-content: center;
         }
@@ -403,7 +403,7 @@
           margin-right: 77px;
           background-color: #fefefe;
 
-          @include _1170 {
+          @include _1366 {
             margin-right: 0;
           }
 
@@ -488,7 +488,9 @@
           box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
           transition: background-color 0.3s;
 
-          .product-nav__svg {
+          svg {
+            width: 20px;
+            height: 20px;
             fill: $light-blue;
             transition: fill 0.3s;
           }
@@ -496,7 +498,7 @@
           &:hover {
             background-color: $light-blue;
 
-            .product-nav__svg {
+            svg {
               fill: #fff;
             }
           }

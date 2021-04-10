@@ -14,7 +14,7 @@
     position: relative;
     margin-bottom: 35px;
 
-    @include _1170 {
+    @include _1366 {
       justify-content: center;
     }
   }
@@ -24,7 +24,7 @@
     @include line-camp;
     -webkit-line-clamp: 2;
 
-    @include _1170 {
+    @include _1366 {
       margin-right: 40px;
     }
   }
@@ -34,23 +34,13 @@
     max-width: 370px;
     @include line-camp;
     @extend %link-style;
-
-    &:hover {
-      color: $light-blue;
-    }
-  }
-
-  &__svg {
-    margin-left: 10px;
-    width: 6px;
-    height: 11px;
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
 
-    @include _1170 {
+    @include _1366 {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -66,7 +56,7 @@
       margin-right: 0;
     }
 
-    @include _1170 {
+    @include _1366 {
       margin-bottom: 30px;
     }
 
@@ -92,10 +82,14 @@
     max-height: 250px;
     object-fit: cover;
     position: relative;
+
+    &:hover {
+      border: 1px solid #000;
+    }
   }
 
   &__info {
-    padding: 0 20px 20px 29px;
+    padding: 0 20px 15px 29px;
     position: relative;
   }
 
@@ -120,7 +114,7 @@
     font-size: 12px;
     line-height: 2.5;
     margin-right: 30px;
-    max-width: 118px;
+    max-width: 125px;
     max-height: 19px;
     overflow: hidden;
     @extend %link-style;
@@ -129,22 +123,15 @@
       margin-right: 0;
     }
 
-    &:focus {
-      color: #000;
-    }
-
-    &:hover {
-      color: $bg-dark;
-    }
-
-    &:active {
-      color: $bg-light;
+    @include _768 {
+      line-height: 1;
     }
   }
 
-  &__data-svg {
-    width: 6px;
-    height: 9px;
+  &__svg {
+    width: 9px;
+    height: 12px;
+    transform: translateY(1px);
   }
 
   &__text {
@@ -154,7 +141,7 @@
     font-size: 18px;
     line-height: 1.4;
     color: $black;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-bottom: 1px solid #e0e0e0;
     @include line-camp;
     -webkit-line-clamp: 3;

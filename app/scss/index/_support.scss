@@ -1,15 +1,16 @@
-.info {
-
-  @include _600 {
-    display: none;
-  }
-
+.support {
   &__inner {
     background-color: $bg-light;
   }
 
   &__list {
     display: flex;
+
+    @include _600 {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -32,12 +33,6 @@
     position: relative;
     padding-left: 80px;
 
-    @include _1024 {
-      padding-left: 5px;
-      padding-right: 5px;
-
-    }
-
     &:before {
       content: '';
       width: 50px;
@@ -46,10 +41,6 @@
       left: 0;
       top: 6px;
       background-repeat: no-repeat;
-
-      @include _1024 {
-        display: none;
-      }
     }
 
     &--support {

@@ -14,23 +14,15 @@
       flex-wrap: wrap;
       justify-content: space-around;
     }
-  }
 
-  &__item {
-    overflow: hidden;
-    margin-bottom: 9px;
-
-    &:last-child {
-      margin-bottom: 0;
+    @include _600 {
+      justify-content: center;
     }
-  }
-
-  &__logo {
-    margin-bottom: 20px;
   }
 
   &__box {
     font-style: normal;
+    max-width: 205px;
 
     @include _1024 {
       margin-right: 30px;
@@ -51,11 +43,37 @@
       @include _1024 {
         margin-right: 30px;
       }
+
+      @include _600 {
+        max-width: 100%;
+      }
     }
 
     &:nth-child(4) {
       max-width: 274px;
       -webkit-line-clamp: 4;
+
+      @include _600 {
+        width: 100%;
+      }
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 9px;
+
+    @include _600 {
+      display: block;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -65,11 +83,6 @@
   }
 
   &__contact {
-    display: flex;
-  }
-
-  &__phone,
-  &__email {
     text-transform: uppercase;
     margin-right: 5px;
   }
@@ -83,7 +96,6 @@
     text-transform: uppercase;
     max-width: 120px;
     @include line-camp;
-    -webkit-line-clamp: 1;
   }
 
   &__link {
@@ -92,16 +104,21 @@
     max-width: 120px;
     @extend %Rubik-400;
     @extend %link-style;
-    color: #7b7b7b;
     font-size: 14px;
     line-height: 1.7;
+    
+    @include _600 {
+      -webkit-line-clamp: 2;
+      padding: 10px;
+      max-width: 130px;
+    }
   }
 
   &__form {
     margin-top: 27px;
   }
 
-  &__form-text {
+  &__form-input {
     font-weight: 400;
     font-size: 12px;
     color: $dark-blue;
@@ -110,6 +127,24 @@
     border: none;
     padding: 10px 10px;
     width: 170px;
+    transition: border 0.3s, background-color 0.3s, box-shadow 0.3s;
+
+    @include _600 {
+      width: 100%;
+    }
+
+    &:focus {
+      border: 1px solid #000;
+    }
+
+    &:hover {
+      background-color: $bg-dark;
+    }
+
+    &:active {
+      box-shadow: 0px 0px 31px 4px rgba(34, 60, 80, 0.74);
+    }
+
   }
 
   &__form-btn {
@@ -119,8 +154,13 @@
     max-width: 100px;
     width: 100%;
     max-height: 45px;
-    padding: 9px;
+    padding: 6px;
     overflow: hidden;
+
+    @include _600 {
+      max-width: 100%;
+      left: 0;
+    }
   }
 
   &__copy {
