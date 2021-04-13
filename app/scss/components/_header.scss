@@ -7,6 +7,7 @@
   right: 0;
   z-index: 999;
   background-color: #ffffff;
+  transition: top 0.3s;
 
   @include _600 {
     height: 180px;
@@ -48,12 +49,13 @@
     padding: 0;
     width: 40px;
     height: 40px;
+    z-index: 999;
 
     @include _1024 {
       display: block;
       position: absolute;
       left: 15px;
-      top: 55px;
+      top: 58px;
     }
 
     @include _600 {
@@ -70,21 +72,23 @@
 
   &__list {
     display: flex;
+    max-height: calc(100vh - 100px);
 
     @include _1024 {
       display: block;
       position: absolute;
       left: 0;
       right: 0;
-      top: 170px;
+      top: 0;
+      overflow-y: auto;
       text-align: center;
-      transform: translateX(-200%);
+      transform: translatey(-200%);
       transition: transform 0.5s;
     }
 
     &--active {
       @include _1024 {
-        transform: translateX(0);
+        transform: translatey(0);
         background-color: $bg-medum;
         z-index: 3;
       }
@@ -107,9 +111,6 @@
     @extend %Rubik-500;
     color: $dark-blue;
     font-size: 15px;
-    border: 1px solid transparent;
-    transition: color 0.3s, border-color 0.3s;
-    outline: transparent;
     @include line-camp;
     -webkit-line-clamp: 1;
     @extend %link-style;

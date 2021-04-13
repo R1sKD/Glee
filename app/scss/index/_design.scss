@@ -1,6 +1,10 @@
 .design {
   padding-bottom: 91px;
 
+  @include _600 {
+    padding-bottom: 30px;
+  }
+
   &__container {
     max-width: 1230px;
   }
@@ -11,6 +15,10 @@
 
   &__filter {
     margin-bottom: 75px;
+
+    @include _600 {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -64,6 +72,10 @@
     color: #191919;
     @include line-camp;
     -webkit-line-clamp: 3;
+
+    @include _600 {
+      font-size: 15px;
+    }
   }
 
   &__type {

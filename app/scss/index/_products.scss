@@ -1,12 +1,20 @@
 .products {
   padding: 63px 0 95px 0;
 
+  @include _600 {
+    padding-bottom: 30px;
+  }
+
   &__title {
     margin-bottom: 18px;
   }
 
   &__filter {
     margin-bottom: 70px;
+
+    @include _600 {
+      margin-bottom: 30px;
+    }
   }
 
   &__container {
@@ -88,6 +96,14 @@
   &__icon {
     background-color: #fff;
     fill: $light-blue;
+
+    &:focus {
+      background-color: $bg-dark;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+    }
   }
 
   .product-nav__item {
@@ -141,6 +157,7 @@
   @include _600 {
     flex-wrap: wrap;
     height: 600px;
+    padding: 10px;
   }
 
   &__img {

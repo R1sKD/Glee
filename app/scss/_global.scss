@@ -56,7 +56,6 @@ body {
   display: inline-block;
   text-align: center;
   border: none;
-  width: 200px;
   padding: 17px 25px;
   background-color: $light-blue;
   color: #ffffff;
@@ -67,7 +66,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 
   &:focus {
-    box-shadow: 0px 0px 16px 6px rgba(34, 60, 80, 0.4);
+    box-shadow: 0px 0px 31px 4px rgba(34, 60, 80, 0.74);
   }
 
   &:hover {
@@ -75,13 +74,13 @@ body {
   }
 
   &:active {
-    background-color: $dark-blue;
+    background-color: $dark-blue
   }
 
   &--arrow {
     text-align: left;
-    padding-right: 40px;
     position: relative;
+    padding: 20px 100px 20px 28px;
 
     &::after {
       content: '';
@@ -98,6 +97,7 @@ body {
 
   &--transparent {
     max-width: 180px;
+    padding-right: 0;
     color: $blue;
     background-color: transparent;
     border: 1px solid $blue;
@@ -107,17 +107,8 @@ body {
       background-image: url(../../sprite/sprite.svg#icons--arrow-right--blue);
     }
 
-    &:focus {
-      background-color: $light-blue;
-    }
-
     &:hover {
       background-color: $bg-dark;
-    }
-
-    &:active {
-      background-color: $bg-dark;
-      color: inherit;
     }
   }
 }
@@ -146,6 +137,10 @@ body {
   display: flex;
   justify-content: center;
 
+  @include _480 {
+    flex-direction: column;
+  }
+
   &__item {
     margin-right: 30px;
     @include line-camp;
@@ -160,14 +155,14 @@ body {
   }
 
   &__btn {
-    border: 1px solid transparent;
+    border: none;
     background-color: transparent;
     color: #8b8b8b;
     font-size: 16px;
     @extend %DMSans-700;
     padding: 0;
     cursor: pointer;
-    transition: color 0.3s, border-color 0.3s, border-bottom 0.3s;
+    transition: color 0.3s;
     @include line-camp;
     max-width: 150px;
     @extend %link-style;

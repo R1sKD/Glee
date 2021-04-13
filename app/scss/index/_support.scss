@@ -6,7 +6,7 @@
   &__list {
     display: flex;
 
-    @include _600 {
+    @include _768 {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -24,6 +24,10 @@
     position: relative;
     border-right: 1px solid #e8e4df;
 
+    @include _768 {
+      border-right: none;
+    }
+
     &:last-child {
       border-right: none;
     }
@@ -33,6 +37,18 @@
     position: relative;
     padding-left: 80px;
 
+    @include _1024 {
+      padding-left: 0;
+    }
+
+    @include _768 {
+      padding-left: 80px;
+    }
+
+    @include _480 {
+      padding-left: 0;
+    }
+
     &:before {
       content: '';
       width: 50px;
@@ -41,6 +57,18 @@
       left: 0;
       top: 6px;
       background-repeat: no-repeat;
+
+      @include _1024 {
+        display: none;
+      }
+
+      @include _768 {
+        display: block;
+      }
+
+      @include _480 {
+        display: none;
+      }
     }
 
     &--support {
@@ -87,8 +115,8 @@
     @include line-camp;
     -webkit-line-clamp: 2;
 
-    @include _1024 {
-      font-size: 14px;
+    @include _768 {
+      max-width: 100%;
     }
   }
 }
