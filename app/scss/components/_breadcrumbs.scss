@@ -49,17 +49,6 @@
     color: rgba(34, 41, 51, 0.6);
     padding-bottom: 3px;
     @include line-camp;
-
-    &:focus {
-      color: $dark-blue;
-    }
-
-    &:hover {
-      color: #191919;
-    }
-
-    &:active {
-      color: $bg-dark;
-    }
+    @extend %link-style;
   }
 }

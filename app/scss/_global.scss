@@ -213,7 +213,6 @@ body {
     justify-content: center;
     align-items: center;
     transition: color 0.3s, background-color 0.3s;
-    @extend %link-style;
 
     &:focus {
       border-color: $dark-blue;
