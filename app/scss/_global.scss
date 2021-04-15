@@ -129,16 +129,14 @@ body {
   }
 }
 
-.subtitle {
-  font-size: 36px;
-}
-
 .mix-filter {
   display: flex;
   justify-content: center;
 
   @include _480 {
-    flex-direction: column;
+    display: -webkit-box;
+    overflow-x: scroll;
+    margin: 0 auto;
   }
 
   &__item {
@@ -205,13 +203,13 @@ body {
   }
 
   &__link {
-    width: 50px;
-    height: 50px;
+    padding: 10px 20px;
     border: 1px solid $light-blue;
     color: $dark-blue;
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: transparent;
     transition: color 0.3s, background-color 0.3s;
 
     &:focus {
@@ -222,6 +220,11 @@ body {
       background-color: #edf1f4;
     }
 
+    &:active {
+      background-color: $dark-blue;
+      color: #ffffff;
+    }
+
     &--active {
       background-color: $light-blue;
       color: #ffffff;
@@ -229,23 +232,6 @@ body {
       &:hover {
         background-color: $light-blue;
       }
-    }
-  }
-
-  &__next {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $dark-blue;
-    width: 70px;
-    height: 50px;
-    border: 1px solid $light-blue;
-    transition: background-color 0.3s;
-    outline: transparent;
-    @extend %link-style;
-
-    &:hover {
-      background-color: #edf1f4;
     }
   }
 }

@@ -16,36 +16,35 @@
   }
 
   &__img {
-    background-image: url(../../images/about.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 570px;
     width: 100%;
     max-height: 676px;
-    object-fit: cover;
 
-    @include _1024 {
+    @include _768 {
       display: none;
     }
   }
-}
 
-.about-content {
-  max-width: 600px;
-  padding: 30px 0 80px 45px;
-  color: $dark-blue;
 
-  @include _1024 {
-    padding: 0;
+  &__content {
+    max-width: 600px;
+    padding: 30px 0 80px 45px;
+    color: $dark-blue;
+
+    @include _768 {
+      padding: 0;
+    }
   }
 
-  &__experience {
+  &__content-experience {
     display: flex;
     align-items: center;
   }
 
-  &__year {
+  &__content-year {
     font-size: 140px;
     @extend %Rubik-700;
     color: $light-blue;
@@ -53,26 +52,27 @@
     line-height: 1.4;
   }
 
-  &__year-text {
+  &__content-year__text {
     @include line-camp;
-    -webkit-line-clamp: 2;
-  }
-
-  &__year-text,
-  &__text {
+    -webkit-line-clamp: 3;
     width: 100px;
     @extend %Rubik-400;
     font-size: 16px;
     line-height: 1.9;
   }
 
-  &__subtitle {
+  &__content-subtitle {
     margin-bottom: 25px;
+    font-size: 36px;
     @include line-camp;
     -webkit-line-clamp: 2;
   }
 
-  &__text {
+  &__content-text {
+    width: 100px;
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 1.9;
     width: 100%;
     padding-bottom: 60px;
     margin-bottom: 61px;
@@ -81,17 +81,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+}
 
-  &__info-list {
-    display: flex;
+.glee-info {
+  display: flex;
 
-    @include _768 {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  @include _768 {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  &__info-item {
+  &__item {
     padding-left: 63px;
     margin-right: 30px;
     position: relative;
@@ -123,12 +123,12 @@
     }
   }
 
-  &__info-num {
+  &__num {
     font-size: 36px;
   }
 }
 
-.about-bottom {
+.glee-stat {
   min-height: 320px;
   background-color: $bg-dark;
   padding: 50px 0 75px 0;
@@ -153,7 +153,7 @@
       content: '';
       width: 70px;
       height: 75px;
-      top: 30px;
+      bottom: 85px;
       left: 50%;
       transform: translateX(-50%);
       background-repeat: no-repeat;
@@ -165,7 +165,6 @@
 
     &--delivery::before {
       background-image: url(../../sprite/sprite.svg#icons--about-delivery);
-      top: 40px;
     }
 
     &--time::before {
@@ -190,7 +189,6 @@
     line-height: 1.9;
     max-width: 210px;
     @include line-camp;
-    ;
   }
 }
 
@@ -223,6 +221,7 @@
 
   &__title {
     margin-bottom: 10px;
+    font-size: 36px;
     @include line-camp;
   }
 
@@ -244,12 +243,12 @@
     border-radius: 2px;
   }
 
-  &__pictures {
+  &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 30px;
-    row-gap: 100px;
+    grid-column-gap: 30px;
+    grid-row-gap: 100px;
 
     @include _1366 {
       grid-template-columns: repeat(1, 1fr);
@@ -263,7 +262,7 @@
     }
   }
 
-  &__photo {
+  &__item {
     position: relative;
 
     @include _768 {
@@ -273,12 +272,16 @@
 
   &__img {
     object-fit: cover;
+    z-index: -1;
     height: 321px;
     max-width: 370px;
     width: 100%;
   }
 
   &__info {
+    position: absolute;
+    bottom: -66px;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,18 +289,11 @@
     background-color: #fff;
     max-width: 325px;
     width: 100%;
-    position: absolute;
-    bottom: -66px;
-    left: 0;
     box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
 
     @include _480 {
       max-width: 290px;
     }
-  }
-
-  &__data {
-    margin-right: 57px;
   }
 
   &__name {
@@ -320,45 +316,18 @@
 
   &__social {
     display: flex;
-  }
 
-  &__link {
-    display: block;
-    text-align: center;
-    padding-top: 11px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #f6f6f6;
-    margin-right: 5px;
-    transition: border-color 0.3s;
+    .circle-btn {
+      margin-right: 5px;
 
-    &:last-child {
-      margin-right: 0;
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     svg {
       width: 18px;
       height: 18px;
-      fill: #888888;
-      transition: fill 0.3s;
-
-      &:hover {
-        fill: $dark-blue;
-      }
-    }
-
-    &:focus {
-      border-color: $bg-dark;
-    }
-
-    &:hover {
-      background-color: $bg-medum;
-      fill: $dark-blue;
-    }
-
-    &:active {
-      background-color: $bg-dark;
     }
   }
 }

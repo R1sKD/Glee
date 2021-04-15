@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 45px;
+    padding-left: 15px;
     align-items: center;
     max-width: 590px;
     width: 100%;
@@ -26,6 +27,11 @@
 
     @include _768 {
       border-right: none;
+      border-bottom: 1px solid #e8e4df;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      min-height: 0;
+      flex-direction: row;
     }
 
     &:last-child {
@@ -37,18 +43,6 @@
     position: relative;
     padding-left: 80px;
 
-    @include _1024 {
-      padding-left: 0;
-    }
-
-    @include _768 {
-      padding-left: 80px;
-    }
-
-    @include _480 {
-      padding-left: 0;
-    }
-
     &:before {
       content: '';
       width: 50px;
@@ -57,18 +51,6 @@
       left: 0;
       top: 6px;
       background-repeat: no-repeat;
-
-      @include _1024 {
-        display: none;
-      }
-
-      @include _768 {
-        display: block;
-      }
-
-      @include _480 {
-        display: none;
-      }
     }
 
     &--support {
@@ -98,6 +80,7 @@
     max-width: 200px;
     max-height: 140px;
     @include line-camp;
+    -webkit-line-clamp: 2;
 
     @include _1024 {
       font-size: 15px;

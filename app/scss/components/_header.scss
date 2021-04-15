@@ -47,9 +47,17 @@
     background-color: transparent;
     border: none;
     padding: 0;
-    width: 40px;
-    height: 40px;
     z-index: 999;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url(../../sprite/sprite.svg#menu);
+    }
 
     @include _1024 {
       display: block;
@@ -60,19 +68,14 @@
 
     @include _600 {
       position: relative;
-      top: 0;
-      left: 0;
+      left: -40px;
+      top: -23px;
     }
-  }
-
-  &__img {
-    width: 40px;
-    height: 40px;
   }
 
   &__list {
     display: flex;
-    max-height: calc(100vh - 100px);
+    max-height: 100vh;
 
     @include _1024 {
       display: block;
@@ -146,67 +149,6 @@
     }
   }
 
-  &__action {
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #edf1f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    position: relative;
-    outline: transparent;
-    transition: box-shadow 0.3s, background-color 0.3s, fill 0.3s;
-
-    &--heart {
-      width: 90px;
-      border-radius: 23px 0 0 23px;
-      position: relative;
-      background-color: $bg-dark;
-
-      &::after {
-        position: absolute;
-        content: '';
-        right: 4px;
-        width: 1px;
-        height: 32px;
-        background-color: $bg-light;
-        z-index: 1;
-      }
-    }
-
-    &--cart {
-      width: 90px;
-      border-radius: 0 23px 23px 0;
-      background-color: $bg-dark;
-    }
-
-    &--card {
-      background-color: #ffffff;
-      fill: $light-blue;
-    }
-
-    &:focus {
-      box-shadow: 0px 0px 31px 4px rgba(34, 60, 80, 0.74);
-    }
-
-    &:hover {
-      background-color: $light-blue;
-      fill: #ffffff;
-    }
-
-    &:active {
-      background-color: $dark-blue;
-    }
-  }
-
-  svg {
-    width: 16px;
-    height: 16px;
-  }
-
   &__num {
     position: absolute;
     top: 10px;
@@ -221,4 +163,79 @@
     font-size: 10px;
     color: $dark-blue;
   }
+}
+
+.circle-btn {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #edf1f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: relative;
+  outline: transparent;
+  transition: box-shadow 0.3s, background-color 0.3s, fill 0.3s;
+
+  &--white {
+    background-color: #fff;
+    box-shadow: 0px 6px 7px 3px rgba(37, 37, 37, 0.4);
+    fill: $light-blue;
+
+    &:focus {
+      background-color: $bg-dark;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+    }
+  }
+
+  &--square {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &--heart {
+    width: 90px;
+    border-radius: 23px 0 0 23px;
+    position: relative;
+    background-color: $bg-dark;
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: 4px;
+      width: 1px;
+      height: 32px;
+      background-color: $bg-light;
+      z-index: 1;
+    }
+  }
+
+  &--cart {
+    width: 90px;
+    border-radius: 0 23px 23px 0;
+    background-color: $bg-dark;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 31px 4px rgba(34, 60, 80, 0.74);
+  }
+
+  &:hover {
+    background-color: $light-blue;
+    fill: #ffffff;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+  }
+}
+
+svg {
+  width: 16px;
+  height: 16px;
 }

@@ -1,405 +1,104 @@
 <section class="products">
-        <div class="container">
-          <h2 class="title products__title">Products of the week</h2>
+  <div class="container">
+    <h2 class="title products__title">Products of the week</h2>
 
-          <div class="products__mix-filter" data-ref="products__list">
-            <ul class="mix-filter products__filter">
-              <li class="mix-filter__item">
-                <button type="button" class="mix-filter__btn" data-filter="all">All</button>
-              </li>
-              <li class="mix-filter__item">
-                <button type="button" class="mix-filter__btn" data-filter=".category-a">Furnitures</button>
-              </li>
-              <li class="mix-filter__item">
-                <button type="button" class="mix-filter__btn" data-filter=".category-b">Chairs</button>
-              </li>
-              <li class="mix-filter__item">
-                <button type="button" class="mix-filter__btn" data-filter=".category-c">Lighting</button>
-              </li>
-              <li class="mix-filter__item">
-                <button type="button" class="mix-filter__btn" data-filter=".category-d">Decor</button>
-              </li>
-            </ul>
+    <div class="products__mix-filter" data-ref="products__list">
+      <ul class="mix-filter products__filter">
+        <li class="mix-filter__item">
+          <button type="button" class="mix-filter__btn" data-filter="all">All</button>
+        </li>
+        <li class="mix-filter__item">
+          <button type="button" class="mix-filter__btn" data-filter=".category-a">Furnitures</button>
+        </li>
+        <li class="mix-filter__item">
+          <button type="button" class="mix-filter__btn" data-filter=".category-b">Chairs</button>
+        </li>
+        <li class="mix-filter__item">
+          <button type="button" class="mix-filter__btn" data-filter=".category-c">Lighting</button>
+        </li>
+        <li class="mix-filter__item">
+          <button type="button" class="mix-filter__btn" data-filter=".category-d">Decor</button>
+        </li>
+      </ul>
 
-            <div class="container products__container">
-              <ul class="products__list">
-                <li class="products__box mix category-a">
-                  <article class="product-card">
-                    <img class="product-card__img" src="images/content/products/1.png" alt="Wooden radio">
-                    <div class="product-card__info">
-                      <h3 class="product-card__name">Wooden radio</h3>
-                      <span class="product-card__price">
-                        <span class="product-card__currency">$</span>29.00</span>
-                    </div>
+      <div class="container products__container">
+        <ul class="products__list">
+          <li class="products__box mix category-a">
+            @@include('product-card.html', 
+              {"name": "Wooden radio",
+              "photo": "1"
+            })
+          </li>
 
-                    <ul class="product-nav product-card__icons">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" type="button">
-                          <span class="sr-only">increase products size</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+          <li class="products__box  mix category-a">
+            @@include('product-card.html', 
+              {"name": "Wooden chair",
+              "photo": "2"
+            })
+          </li>
 
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">add products to the cart</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </button>
-                      </li>
+          <li class="products__box mix category-b">
+            @@include('product-card.html', 
+              {"name": "White chair",
+              "photo": "3"
+            })
+          </li>
 
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">gadd product to the favourite list</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </article>
-                </li>
+          <li class="products__box mix category-c">
+            @@include('product-card.html', 
+              {"name": "White chair",
+              "photo": "4"
+            })
+          </li>
 
-                <li class="products__box  mix category-a">
-                  <article class="product-card">
-                    <div class="product-card__photo">
-                      <img class="product-card__img" src="images/content/products/2.png" alt="Wooden chair">
-                    </div>
-                    <div class="product-card__info">
-                      <h3 class="product-card__name">Wooden chair</h3>
-                      <span class="product-card__price">
-                        <span class="product-card__currency">$</span>29.00</span>
-                    </div>
+          <li class="products__box mix category-c">
+            @@include('product-card.html', 
+              {"name": "Whooden radio",
+              "photo": "5"
+            })
+          </li>
 
-                    <ul class="product-nav product-card__icons">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" type="button">
-                          <span class="sr-only">increase products size</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+          <li class="products__box mix category-d">
+            @@include('product-card.html', 
+              {"name": "Wooden chair",
+              "photo": "6"
+            })
+          </li>
 
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">add products to the cart</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </button>
-                      </li>
+          <li class="products__box mix category-d">
+            @@include('product-card.html', 
+              {"name": "White chair",
+              "photo": "7"
+            })
+          </li>
 
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">gadd product to the favourite list</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </article>
-                </li>
+          <li class="products__box mix category-d">
+            @@include('product-card.html', 
+              {"name": "Retro table",
+              "photo": "8"
+            })
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-                <li class="products__box mix category-b">
-                  <article class="product-card">
-                    <div class="product-card__photo">
-                      <img class="product-card__img" src="images/content/products/3.png" alt="White chair" ч>
-                    </div>
-                    <div class="product-card__info">
-                      <h3 class="product-card__name">White chair</h3>
-                      <span class="product-card__price">
-                        <span class="product-card__currency">$</span>29.00</span>
-                    </div>
+  <div class="products-furniture">
+    <div class="container container--big">
+      <ul class="products-furniture__list">
+        <li class="products-furniture__item">
+          @@include('product-lamp.html', 
+              {"photo": "9"
+            })
+        </li>
 
-                    <ul class="product-nav product-card__icons">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" type="button">
-                          <span class="sr-only">increase products size</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
+        <li class="products-furniture__item">
+          @@include('product-lamp.html', 
+              {"photo": "10"
+            })
+        </li>
+      </ul>
+    </div>
+  </div>
 
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">add products to the cart</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">gadd product to the favourite list</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </article>
-                </li>
-
-                <li class="products__box mix category-c">
-                  <article class="product-card">
-                    <div class="product-card__photo">
-                      <img src="images/content/products/4.png" alt="Retro table" class="product-card__img">
-                    </div>
-                    <div class="product-card__info">
-                      <h3 class="product-card__name">Retro table</h3>
-                      <span class="product-card__price">
-                        <span class="product-card__currency">$</span>29.00</span>
-                    </div>
-
-                    <ul class="product-nav product-card__icons">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" type="button">
-                          <span class="sr-only">increase products size</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">add products to the cart</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">gadd product to the favourite list</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </article>
-                </li>
-
-                <li class="products__box mix category-c">
-                  <artcile class="product-card">
-                    <div class="product-card__photo">
-                      <img src="images/content/products/5.png" alt="Whooden radio" class="product-card__img">
-                    </div>
-                    <div class="product-card__info">
-                      <h3 class="product-card__name">Whooden radio</h3>
-                      <span class="product-card__price">
-                        <span class="product-card__currency">$</span>29.00</span>
-                    </div>
-
-                    <ul class="product-nav product-card__icons">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" type="button">
-                          <span class="sr-only">increase products size</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">add products to the cart</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">gadd product to the favourite list</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </artcile>
-                </li>
-
-                <li class="products__box mix category-d">
-                  <article class="product-card">
-                    <div class="product-card__photo">
-                      <img src="images/content/products/6.png" alt="Wooden chair" class="product-card__img">
-                    </div>
-                    <div class="product-card__info">
-                      <h3 class="product-card__name">Wooden chair</h3>
-                      <span class="product-card__price">
-                        <span class="product-card__currency">$</span>29.00</span>
-                    </div>
-
-                    <ul class="product-nav product-card__icons">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" type="button">
-                          <span class="sr-only">increase products size</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">add products to the cart</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">gadd product to the favourite list</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </article>
-                </li>
-
-                <li class="products__box mix category-d">
-                  <article class="product-card">
-                    <div class="product-card__photo">
-                      <img src="images/content/products/7.png" alt="White chair" class="product-card__img">
-                    </div>
-                    <div class="product-card__info">
-                      <h3 class="product-card__name">White chair</h3>
-                      <span class="product-card__price">
-                        <span class="product-card__currency">$</span>29.00</span>
-                    </div>
-
-                    <ul class="product-nav product-card__icons">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" type="button">
-                          <span class="sr-only">increase products size</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">add products to the cart</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">gadd product to the favourite list</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </article>
-                </li>
-
-                <li class="products__box mix category-d">
-                  <article class="product-card">
-                    <div class="product-card__photo">
-                      <img src="images/content/products/8.png" alt="Retro table" class="product-card__img">
-                    </div>
-                    <div class="product-card__info">
-                      <h3 class="product-card__name">Retro table</h3>
-                      <span class="product-card__price">
-                        <span class="product-card__currency">$</span>29.00</span>
-                    </div>
-
-                    <ul class="product-nav product-card__icons">
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" type="button">
-                          <span class="sr-only">increase products size</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--search'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">add products to the cart</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--cart'></use>
-                          </svg>
-                        </button>
-                      </li>
-
-                      <li class="product-nav__item">
-                        <button class="product-nav__action product-card__icon" href="#">
-                          <span class="sr-only">gadd product to the favourite list</span>
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--heart'></use>
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </article>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="products-furniture">
-          <div class="container container--big">
-            <ul class="products-furniture__list">
-              <li class="products-furniture__item">
-                <article class="product-lamp">
-                  <img class="product-lamp__img" src="images/content/products/9.png" alt="lamp">
-                  <div class="product-lamp__info">
-                    <h3 class="product-lamp__title">
-                      Mirum Notare Tellus
-                    </h3>
-                    <div class="product-lamp__text">
-                      <p>
-                        LED Corn Bulb Lamp 5W 7W 10W 12W 15W E26 E27 LED Corn Light
-                      </p>
-                    </div>
-                    <a class="product-lamp__btn btn btn--arrow btn--transparent" href="#">View More</a>
-                  </div>
-                </article>
-              </li>
-
-              <li class="products-furniture__item">
-                <article class="product-lamp">
-                  <img class="product-lamp__img" src="images/content/products/10.png" alt="lamp">
-                  <div class="product-lamp__info">
-                    <h3 class="product-lamp__title">
-                      Malesuada Tempor
-                      Euismod
-                    </h3>
-                    <div class="product-lamp__text">
-                      <p>
-                        50W 8000lm Compact Size for HID Street Light Replacement LED Corn Light
-                      </p>
-                    </div>
-                    <a class="product-lamp__btn btn btn--arrow btn--transparent" href="#">View More</a>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </section>
+</section>
