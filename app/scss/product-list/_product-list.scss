@@ -209,6 +209,10 @@
         color: $dark-blue;
       }
     }
+
+    &:focus+.brand-filter__contain {
+      border: 1px solid $dark-blue;
+    }
   }
 
   &__text+.brand-filter__text {
