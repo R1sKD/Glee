@@ -4,10 +4,12 @@
       <ul class="product-filters product-list__filters">
         <li class="product-filters__item">
           <div class="category-filter">
-            <h3 class="filter-title">
-              category
-            </h3>
-            <form class="category-filter__form" action="#">
+            <button class="filter-btn" type="button">
+              <h3 class="filter-title">
+                category
+              </h3>
+            </button>
+            <form class="category-filter__form product-filter" action="#">
               <label class="category-filter__label">
                 <input class="category-filter__input" type="checkbox" checked>
                 <div class="category-filter__checkbox">
@@ -48,11 +50,14 @@
 
         <li class="product-filters__item">
           <div class="price-filter">
-            <h3 class="filter-title">
-                  price
-                </h3>
-            <form class="price-filter__form" action="#">
-              <input class="price-filter__input" type="checkbox" data-min="0" data-max="1200" data-from="100.01" data-to="500.01">
+            <button class="filter-btn" type="button">
+              <h3 class="filter-title">
+                price
+              </h3>
+            </button>
+            <form class="price-filter__form product-filter" action="#">
+              <input class="price-filter__input" type="checkbox" data-min="0" data-max="1200" data-from="100.01"
+                data-to="500.01">
               <div class="price-filter__prices">
                 <span class="price-filter__dollar">$
                   <span class="price-filter__from"></span>
@@ -67,10 +72,12 @@
 
         <li class="product-filters__item">
           <div class="brand-filter">
-            <h3 class="filter-title">
-                  brand
-                </h3>
-            <form class="brand-filter__form" action="#">
+            <button class="filter-btn" type="button">
+              <h3 class="filter-title">
+                brand
+              </h3>
+            </button>
+            <form class="brand-filter__form product-filter" action="#">
               <label class="brand-filter__label">
                 <input class="brand-filter__input" type="checkbox" checked>
                 <div class="brand-filter__checkbox">
@@ -116,10 +123,12 @@
 
         <li class="product-filters__item">
           <div class="recent">
-            <h3 class="filter-title">
-                  recent products
-                </h3>
-            <ul class="recent__list">
+            <button class="filter-btn" type="button">
+              <h3 class="filter-title">
+                recent products
+              </h3>
+            </button>
+            <ul class="recent__list product-filter">
               <li class="recent__item">
                 <article class="recent-product">
                   <a class="recent-product__link" href="#">
@@ -128,8 +137,8 @@
                     </div>
                     <div class="recent-product__info">
                       <h4 class="recent-product__title">
-                            Pendant lamp
-                          </h4>
+                        Pendant lamp
+                      </h4>
                       <div class="star" data-rateyo-rating="4"></div>
                       <span class="recent-product__price">23$</span>
                     </div>
@@ -145,8 +154,8 @@
                     </div>
                     <div class="recent-product__info">
                       <h4 class="recent-product__title">
-                            Pendant lamp
-                          </h4>
+                        Pendant lamp
+                      </h4>
                       <div class="star" data-rateyo-rating="4"></div>
                       <span class="recent-product__price">23$</span>
                     </div>
@@ -162,8 +171,8 @@
                     </div>
                     <div class="recent-product__info">
                       <h4 class="recent-product__title">
-                            Pendant lamp
-                          </h4>
+                        Pendant lamp
+                      </h4>
                       <div class="star" data-rateyo-rating="4"></div>
                       <span class="recent-product__price">23$</span>
                     </div>
@@ -191,86 +200,86 @@
 
         <ul class="product-content__list">
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden radio",
-              "photo": "1"
+            @@include('product-card.html',
+            {"name": "Wooden radio",
+            "photo": "1"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden chair",
-              "photo": "2"
+            @@include('product-card.html',
+            {"name": "Wooden chair",
+            "photo": "2"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden chair",
-              "photo": "3"
+            @@include('product-card.html',
+            {"name": "Wooden chair",
+            "photo": "3"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden radio",
-              "photo": "4"
+            @@include('product-card.html',
+            {"name": "Wooden radio",
+            "photo": "4"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden chair",
-              "photo": "5"
+            @@include('product-card.html',
+            {"name": "Wooden chair",
+            "photo": "5"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden chair",
-              "photo": "4"
+            @@include('product-card.html',
+            {"name": "Wooden chair",
+            "photo": "4"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden radio",
-              "photo": "6"
+            @@include('product-card.html',
+            {"name": "Wooden radio",
+            "photo": "6"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden chair",
-              "photo": "7"
+            @@include('product-card.html',
+            {"name": "Wooden chair",
+            "photo": "7"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden chair",
-              "photo": "8"
+            @@include('product-card.html',
+            {"name": "Wooden chair",
+            "photo": "8"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden radio",
-              "photo": "11"
+            @@include('product-card.html',
+            {"name": "Wooden radio",
+            "photo": "11"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden chair",
-              "photo": "12"
+            @@include('product-card.html',
+            {"name": "Wooden chair",
+            "photo": "12"
             })
           </li>
 
           <li class="product-content__item">
-            @@include('product-card.html', 
-              {"name": "Wooden chair",
-              "photo": "13"
+            @@include('product-card.html',
+            {"name": "Wooden chair",
+            "photo": "13"
             })
           </li>
         </ul>

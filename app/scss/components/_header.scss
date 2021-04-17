@@ -83,6 +83,8 @@
       left: 0;
       right: 0;
       top: 0;
+      bottom: 0;
+      height: 100vh;
       overflow-y: auto;
       text-align: center;
       transform: translatey(-200%);
@@ -196,6 +198,7 @@
   &--square {
     border-radius: 0;
     box-shadow: none;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   }
 
   &--heart {

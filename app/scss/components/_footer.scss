@@ -200,6 +200,10 @@
     border-right: 1px solid #7b7b7b;
     padding: 0 13px;
 
+    @include _480 {
+      padding: 0 5px;
+    }
+
     &:last-child {
       border-right: none;
       padding-right: 0;

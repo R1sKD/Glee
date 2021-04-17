@@ -63,7 +63,6 @@
   font-size: 18px;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 30px;
   max-width: 200px;
 
   &:after {
@@ -77,7 +76,29 @@
   }
 }
 
-.category-filter {
+.filter-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  outline: transparent;
+  margin-bottom: 30px;
+  transition: background-color 0.3s, border 0.3s;
+
+  &:focus {
+    border: 1px solid $dark-blue;
+  }
+
+  &:hover {
+    background-color: #edf1f4;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+  }
+}
+
+.category-filter,
+.brand-filter {
   &__label {
     cursor: pointer;
   }
@@ -91,15 +112,15 @@
   }
 
   &__checkbox {
-    padding: 9px 4px 9px 12px;
+    padding: 9px 18px 8px 23px;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, border 0.3s;
 
     &:focus {
-      background-color: #ddf3ff;
+      border: 1px solid $dark-blue;
     }
 
     &:hover {
@@ -107,19 +128,7 @@
     }
 
     &:active {
-      background-color: $dark-blue;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      right: 22px;
-      top: 9px;
-      width: 6px;
-      height: 10px;
-      background-image: url(../../images/icons/miniarrow-right.svg);
-      background-position: center center;
-      background-repeat: no-repeat;
+      background-color: $blue;
     }
   }
 
@@ -127,6 +136,20 @@
     color: $dark-blue;
     @include line-camp;
     max-width: 200px;
+  }
+}
+
+.category-filter__checkbox {
+  &::after {
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: 9px;
+    width: 6px;
+    height: 10px;
+    background-image: url(../../images/icons/miniarrow-right.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -178,13 +201,7 @@
 }
 
 .brand-filter {
-  &__label {
-    cursor: pointer;
-  }
-
   &__input {
-    @extend %checkbox-hidden;
-
     &:checked+.brand-filter__checkbox {
       background-color: #edf1f4;
 
@@ -192,31 +209,6 @@
         color: $dark-blue;
       }
     }
-  }
-
-  &__checkbox {
-    display: flex;
-    justify-content: space-between;
-    padding: 9px 24px 9px 12px;
-    border-radius: 3px;
-    transition: background-color 0.3s;
-
-    &:focus {
-      background-color: #ddf3ff;
-    }
-
-    &:hover {
-      background-color: #edf1f4;
-    }
-
-    &:active {
-      background-color: #ddf3ff;
-    }
-  }
-
-  &__text {
-    @include line-camp;
-    max-width: 200px;
   }
 
   &__text+.brand-filter__text {

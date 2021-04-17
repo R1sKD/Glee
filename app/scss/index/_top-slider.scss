@@ -28,7 +28,7 @@
     padding-left: 180px;
 
     @include _1024 {
-      padding-left: 50px;
+      padding-left: 0;
     }
 
     @include _600 {
@@ -86,11 +86,12 @@
     padding-right: 180px;
 
     @include _1024 {
-      padding-right: 50px;
+      padding-right: 0;
     }
 
     @include _600 {
       padding-right: 0;
+      margin-bottom: 70px;
     }
 
     &:after {
@@ -118,18 +119,22 @@
 
     @include _1366 {
       max-width: 500px;
+      max-height: 400px;
     }
 
     @include _1024 {
       max-width: 300px;
+      max-height: 350px;
     }
 
     @include _768 {
       max-width: 250px;
+      max-height: 300px;
     }
 
     @include _600 {
       max-width: 400px;
+      max-height: 150px;
     }
 
     @include _480 {

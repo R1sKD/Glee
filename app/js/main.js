@@ -19,6 +19,10 @@ $(function(){
     readOnly: true,
   });
 
+  $('.filter-btn').on('click', function () {
+    $(this).siblings().slideToggle();
+  });
+
   $('.button-list').on('click', function () {
     $('.product-list__pagination').addClass('product-list__pagination--list');
   });

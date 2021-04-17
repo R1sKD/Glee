@@ -10,96 +10,24 @@
     <div class="insgihts__bottom">
       <ul class="insights__list">
         <li class="insights__item">
-          <article class="insights-card">
-            <a class="insights-card__link" href="#">
-              <div class="insights-card__photo">
-                <img class="insights-card__img" src="images/content/insights/1.jpg" alt="insights">
-              </div>
-            </a>
-
-            <div class="insights-card__info">
-              <a class="insights-card__info-link btn" href="#">News</a>
-              <h3 class="insights-card__text">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam
-                  </h3>
-              <div class="insights-card__data">
-                <a class="insights-card__data-link" href=" #">
-                  <svg class="insights-card__svg">
-                    <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
-                  </svg>
-                  <time class="insights-card__time">28 january, 2020</time>
-                </a>
-                <a class="insights-card__data-link" href=" #">
-                  <svg class="insights-card__svg">
-                    <use xlink:href='sprite/sprite.svg#icons--user'></use>
-                  </svg>
-                    by admin
-                </a>
-              </div>
-            </div>
-          </article>
+          @@include('insights-card.html',
+          {"text": "Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+          "photo": "1"
+          })
         </li>
 
         <li class="insights__item">
-          <article class="insights-card">
-            <a class="insights-card__link" href="#">
-              <div class="insights-card__photo">
-                <img class="insights-card__img" src="images/content/insights/2.jpg" alt="insights">
-              </div>
-            </a>
-            <div class="insights-card__info">
-              <a class="insights-card__info-link btn" href="#">News</a>
-              <h3 class="insights-card__text">
-                    Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  </h3>
-              <div class="insights-card__data">
-                <a class="insights-card__data-link" href=" #">
-                  <svg class="insights-card__svg">
-                    <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
-                  </svg>
-                  <time class="insights-card__time">28 january, 2020</time>
-                </a>
-                <a class="insights-card__data-link" href=" #">
-                  <svg class="insights-card__svg">
-                    <use xlink:href='sprite/sprite.svg#icons--user'></use>
-                  </svg>
-                      by admin
-                    </a>
-              </div>
-            </div>
-          </article>
+          @@include('insights-card.html',
+          {"text": "Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+          "photo": "2"
+          })
         </li>
 
         <li class="insights__item">
-          <article class="insights-card">
-            <a class="insights-card__link" href="#">
-              <div class="insights-card__photo">
-                <img class="insights-card__img" src="images/content/insights/3.jpg" alt="insights">
-              </div>
-            </a>
-
-            <div class="insights-card__info">
-              <a class="insights-card__info-link btn" href="#">News</a>
-              <h3 class="insights-card__text">
-                    Rncididunt ut labore et dolore magna aliqua. Ut enim
-                  </h3>
-              <div class="insights-card__data">
-                <a class="insights-card__data-link" href=" #">
-                  <svg class="insights-card__svg">
-                    <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
-                  </svg>
-                  <time class="insights-card__time">28 january, 2020</time>
-                </a>
-                <a class="insights-card__data-link" href=" #">
-                  <svg class="insights-card__svg">
-                    <use xlink:href='sprite/sprite.svg#icons--user'></use>
-                  </svg>
-                      by admin
-                    </a>
-              </div>
-            </div>
-          </article>
+          @@include('insights-card.html',
+          {"text": "Rncididunt ut labore et dolore magna aliqua. Ut enim",
+          "photo": "3"
+          })
         </li>
       </ul>
     </div>
