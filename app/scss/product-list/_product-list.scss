@@ -106,22 +106,22 @@
   &__input {
     @extend %checkbox-hidden;
 
-    &:checked+.category-filter__checkbox {
+    &:checked+.category-filter__contain {
       background-color: #edf1f4;
+    }
+
+    &:focus+.category-filter__contain {
+      border: 1px solid $dark-blue;
     }
   }
 
-  &__checkbox {
+  &__contain {
     padding: 9px 18px 8px 23px;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
     position: relative;
     transition: background-color 0.3s, border 0.3s;
-
-    &:focus {
-      border: 1px solid $dark-blue;
-    }
 
     &:hover {
       background-color: #edf1f4;
@@ -139,7 +139,7 @@
   }
 }
 
-.category-filter__checkbox {
+.category-filter__contain {
   &::after {
     content: '';
     position: absolute;
@@ -202,7 +202,7 @@
 
 .brand-filter {
   &__input {
-    &:checked+.brand-filter__checkbox {
+    &:checked+.brand-filter__contain {
       background-color: #edf1f4;
 
       .brand-filter__text {
