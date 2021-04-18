@@ -1,58 +1,158 @@
-<section class="blog">
+<section class="blog-one">
   <div class="container">
-    <div class="blog__inner">
-      <ul class="blog__content">
-        <li class="blog__content-item">
+    <div class="blog-one__inner">
+      <div class="blog-one__content">
+        <div class="blog-one__item">
           @@include('blog-page.html',
           {"photo": "1",
           "title": "Fonsectetur adipisicing eiusmod",
-          "link": "a"
+          "class": "blog-page--page",
+          "link": "div"
           })
-        </li>
+        </div>
 
-        <li class="blog__content-item">
-          @@include('blog-page.html',
-          {"photo": "2",
-          "title": "Fonsectetur adipisicing elit,",
-          "link": "a"
-          })
-        </li>
+        <div class="blog-one__box">
+          <div class="blog-one__author">
+            <img class="blog-one__img" src="images/team/3.jpg" alt="author photo">
 
-        <li class="blog__content-item">
-          @@include('blog-page.html',
-          {"photo": "3",
-          "title": "Fsectetur adipisicing tempor incididunt",
-          "link": "a"
-          })
-        </li>
+            <div class="blog-one__author-info">
+              <h4 class="blog-one__name">Mark N. Hernandez</h4>
+              <span class="blog-one__prof">Designer</span>
+            </div>
+          </div>
 
-        <li class="blog__content-item">
-          @@include('blog-page.html',
-          {"photo": "4",
-          "title": "vonsectetur adipisicing elit",
-          "link": "a"
-          })
-        </li>
+          <div class="blog-one__social">
+            <div class="blog-one__tags">
+              <span class="blog-one__tags-title">Tags:</span>
+              <span class="blog-one__tags-text">All, Trending</span>
+            </div>
+            <div class="blog-one__tags">
+              <span class="blog-one__tags-title">Share:</span>
+              <ul class="blog-one__social-list">
+                <li class="blog-one__social-item">
+                  <a class="social-link" href="#">
+                    <svg>
+                      <use xlink:href='sprite/sprite.svg#icons--facebook'></use>
+                    </svg>
+                  </a>
+                </li>
 
-        <div class="pagination blog__pagination">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--active" href="#">1</a>
+                <li class="blog-one__social-item">
+                  <a class="social-link" href="#">
+                    <svg>
+                      <use xlink:href='sprite/sprite.svg#icons--twitter'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="blog-one__social-item">
+                  <a class="social-link" href="#">
+                    <svg>
+                      <use xlink:href='sprite/sprite.svg#icons--inst'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="blog-one__social-item">
+                  <a class="social-link" href="#">
+                    <svg>
+                      <use xlink:href='sprite/sprite.svg#icons--google+'></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="comments blog-one__comments">
+          <div class="comments__title">
+            <span class="comments__num">3</span>
+            Comments
+          </div>
+          <ul class="comments__list">
+            <li class="comments__item">
+              <div class="comments__box">
+                <img class="comments__photo" src="images/comments/1.jpg" alt="photo author comment">
+
+                <div class="comments__info">
+                  <div class="comments__top">
+                    <span class="comments__name">Delores G. Roberts</span>
+                    <span class="comments__date">Add 11 Oct 2020</span>
+                  </div>
+                  <p class="comments__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                    convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos.
+                    Suspendisse orci sem, ultrices
+                  </p>
+                  <a class="comments__reply" href="#">Reply</a>
+                </div>
+              </div>
+
+              <ul class="comments__answers">
+                <li class="comments__item comments__answer">
+                  <img class="comments__photo" src="images/comments/2.jpg" alt="photo author comment">
+
+                  <div class="comments__info">
+                    <div class="comments__top">
+                      <span class="comments__name">Shannon S. Williams</span>
+                      <span class="comments__date">Add 11 Oct 2020</span>
+                    </div>
+                    <p class="comments__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                      convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra
+                    </p>
+                    <a class="comments__reply" href="#">Reply</a>
+                  </div>
+                </li>
+              </ul>
             </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">
-                Next
-              </a>
+
+            <li class="comments__item">
+              <div class="comments__box">
+                <img class="comments__photo" src="images/comments/3.jpg" alt="photo author comment">
+
+                <div class="comments__info">
+                  <div class="comments__top">
+                    <span class="comments__name">Nicholas R. Coley</span>
+                    <span class="comments__date">Add 11 Oct 2020</span>
+                  </div>
+                  <p class="comments__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                    convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos.
+                    Suspendisse orci sem,
+                  </p>
+                  <a class="comments__reply" href="#">Reply</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-      </ul>
+
+        <div class="comments-leave">
+          <span class="comments-leave__title">Leave A Comment</span>
+          <form class="comments-leave__form" action="#">
+            <div class="comments-leave__box">
+              <label class="comments-leave__label comments-leave__label--name">
+                <span class="sr-only">enter name</span>
+                <input class="comments-leave__input comments-leave__input--name" type="text" placeholder="name">
+              </label>
+              <label class="comments-leave__label comments-leave__label--email">
+                <span class="sr-only">enter email</span>
+                <input class="comments-leave__input comments-leave__input--email" type="email"
+                  placeholder="youremail@gmail.com">
+              </label>
+            </div>
+            <label class="comments-leave__label comments-leave__label--comment">
+              <span class="sr-only">enter comment</span>
+              <textarea class="comments-leave__textarea" name="comment" placeholder="comment"></textarea>
+            </label>
+            <button class="btn btn--big">post comment</button>
+          </form>
+        </div>
+      </div>
 
       <ul class="blog-aside">
         <li class="blog-aside__item">

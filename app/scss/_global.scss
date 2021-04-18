@@ -77,6 +77,11 @@ body {
     background-color: $dark-blue
   }
 
+  &--big {
+    text-transform: uppercase;
+    padding: 17px 37px;
+  }
+
   &--arrow {
     text-align: left;
     position: relative;

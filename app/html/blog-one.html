@@ -1,0 +1,30 @@
+ @@include('parts/head.html', 
+    {"title": "Blog Details"
+    })
+
+<body>
+
+  @@include('parts/header.html')
+
+  <main class="main">
+    <h1 class="sr-only">Glee furnitures</h1>
+
+     @@include('parts/breadcrumbs.html', 
+    {"title": "Blog Details",
+     "link": "Blog details"
+    })
+
+    @@include('parts/blog-one.html')
+    
+    @@include('parts/partners-slider.html',
+    {"class": "partners-slider--small"
+    })
+
+  </main>
+
+  @@include('parts/footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
