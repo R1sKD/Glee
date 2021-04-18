@@ -133,24 +133,9 @@
 
         <div class="comments-leave">
           <span class="comments-leave__title">Leave A Comment</span>
-          <form class="comments-leave__form" action="#">
-            <div class="comments-leave__box">
-              <label class="comments-leave__label comments-leave__label--name">
-                <span class="sr-only">enter name</span>
-                <input class="comments-leave__input comments-leave__input--name" type="text" placeholder="name">
-              </label>
-              <label class="comments-leave__label comments-leave__label--email">
-                <span class="sr-only">enter email</span>
-                <input class="comments-leave__input comments-leave__input--email" type="email"
-                  placeholder="youremail@gmail.com">
-              </label>
-            </div>
-            <label class="comments-leave__label comments-leave__label--comment">
-              <span class="sr-only">enter comment</span>
-              <textarea class="comments-leave__textarea" name="comment" placeholder="comment"></textarea>
-            </label>
-            <button class="btn btn--big">post comment</button>
-          </form>
+          @@include('main-from.html',
+          {"button": "post comment"
+          })
         </div>
       </div>
 
