@@ -8,7 +8,6 @@
     @extend %Rubik-400;
     text-transform: uppercase;
     font-size: 12px;
-    line-height: 2.5;
     margin-right: 30px;
     max-width: 125px;
     overflow: hidden;
@@ -28,5 +27,26 @@
     width: 9px;
     height: 12px;
     transform: translateY(1px);
+  }
+
+  &--gray {
+    color: #9a9a9a;
+
+    svg {
+      fill: #9a9a9a;
+    }
+  }
+
+  &--blue {
+    padding: 25px 25px 25px 20px;
+    background-color: $light-blue;
+
+    .date__text {
+      color: #ffffff;
+    }
+    
+    svg {
+      fill: #ffffff;
+    }
   }
 }
