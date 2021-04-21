@@ -1,0 +1,46 @@
+.pagination {
+  @extend %Rubik-400;
+  display: flex;
+  justify-content: center;
+
+  &--list {
+    justify-content: flex-start;
+
+    @include _1366 {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    margin-right: 15px;
+  }
+
+  &__link {
+    padding: 10px 20px;
+    border: 1px solid $light-blue;
+    color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: transparent;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:focus {
+      border-color: $dark-blue;
+    }
+
+    &:hover {
+      background-color: #edf1f4;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+      color: #ffffff;
+    }
+
+    &--active {
+      background-color: $light-blue;
+      color: #ffffff;
+    }
+  }
+}

@@ -3,130 +3,21 @@
     <div class="product-list__inner">
       <ul class="product-filters product-list__filters">
         <li class="product-filters__item">
-          <div class="category-filter">
-            <button class="filter-btn" type="button">
-              <h3 class="filter-title">
-                category
-              </h3>
-            </button>
-            <form class="category-filter__form product-filter" action="#">
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox" checked>
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Chair</span>
-                </div>
-              </label>
-
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox">
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Table</span>
-                </div>
-              </label>
-
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox">
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Lamp</span>
-                </div>
-              </label>
-
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox">
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Watch</span>
-                </div>
-              </label>
-
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox">
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Clock</span>
-                </div>
-              </label>
-            </form>
-          </div>
+          @@include('filters/category.html')
         </li>
 
         <li class="product-filters__item">
-          <div class="price-filter">
-            <button class="filter-btn" type="button">
-              <h3 class="filter-title">
-                price
-              </h3>
-            </button>
-            <form class="price-filter__form product-filter" action="#">
-              <input class="price-filter__input" type="checkbox" data-min="0" data-max="1200" data-from="100.01"
-                data-to="500.01">
-              <div class="price-filter__prices">
-                <span class="price-filter__dollar">$
-                  <span class="price-filter__from"></span>
-                </span>
-                <span class="price-filter__dollar">$
-                  <span class="price-filter__to"></span>
-                </span>
-              </div>
-            </form>
-          </div>
+          @@include('filters/price.html')
         </li>
 
         <li class="product-filters__item">
-          <div class="brand-filter">
-            <button class="filter-btn" type="button">
-              <h3 class="filter-title">
-                brand
-              </h3>
-            </button>
-            <form class="brand-filter__form product-filter" action="#">
-              <label class="brand-filter__label">
-                <input class="brand-filter__input" type="checkbox" checked>
-                <div class="brand-filter__contain">
-                  <span class="brand-filter__text">RFL</span>
-                  <span class="brand-filter__text">(10)</span>
-                </div>
-              </label>
-
-              <label class="brand-filter__label">
-                <input class="brand-filter__input" type="checkbox">
-                <div class="brand-filter__contain">
-                  <span class="brand-filter__text">Brothers</span>
-                  <span class="brand-filter__text">(21)</span>
-                </div>
-              </label>
-
-              <label class="brand-filter__label">
-                <input class="brand-filter__input" type="checkbox">
-                <div class="brand-filter__contain">
-                  <span class="brand-filter__text">Regal</span>
-                  <span class="brand-filter__text">(3)</span>
-                </div>
-              </label>
-
-              <label class="brand-filter__label">
-                <input class="brand-filter__input" type="checkbox">
-                <div class="brand-filter__contain">
-                  <span class="brand-filter__text">Nadia</span>
-                  <span class="brand-filter__text">(14)</span>
-                </div>
-              </label>
-
-              <label class="brand-filter__label">
-                <input class="brand-filter__input" type="checkbox">
-                <div class="brand-filter__contain">
-                  <span class="brand-filter__text">Otobi</span>
-                  <span class="brand-filter__text">(6)</span>
-                </div>
-              </label>
-            </form>
-          </div>
+          @@include('filters/brand.html')
         </li>
 
         <li class="product-filters__item">
           <div class="recent">
-            <button class="filter-btn" type="button">
-              <h3 class="filter-title">
-                recent products
-              </h3>
+            <button class="filter-btn filter-title" type="button">
+              recent products
             </button>
             <ul class="recent__list product-filter">
               <li class="recent__item">
@@ -284,26 +175,7 @@
           </li>
         </ul>
 
-        <div class="product-list__pagination">
-          <div class="pagination">
-            <ul class="pagination__list">
-              <li class="pagination__item">
-                <a class="pagination__link pagination__link--active" href="#">1</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">2</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">3</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">
-                  Next
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        @@include('pagination.html')
       </div>
     </div>
   </div>

@@ -34,85 +34,20 @@
           })
         </li>
 
-        <div class="pagination blog__pagination">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--active" href="#">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">
-                Next
-              </a>
-            </li>
-          </ul>
-        </div>
+        @@include('pagination.html',
+        {"class": "blog__pagination",
+        })
       </ul>
 
       <ul class="blog-aside">
         <li class="blog-aside__item">
-          <form class="search blog__search" action="#">
-            <label class="search__label">
-              <input class="search__input" type="text">
-            </label>
-            <button class="circle-btn circle-btn--square search__btn" type="button">
-              <span class="sr-only">Search blog</span>
-              <svg>
-                <use xlink:href='sprite/sprite.svg#icons--search'></use>
-              </svg>
-            </button>
-          </form>
+          @@include('filters/search.html',
+          {"class": "blog__search"
+          })
         </li>
 
         <li class="blog-aside__item">
-          <div class="category-filter">
-            <button class="filter-btn" type="button">
-              <h3 class="filter-title">
-                category
-              </h3>
-            </button>
-            <form class="category-filter__form product-filter" action="#">
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox" checked>
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Chair</span>
-                </div>
-              </label>
-
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox">
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Table</span>
-                </div>
-              </label>
-
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox">
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Lamp</span>
-                </div>
-              </label>
-
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox">
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Watch</span>
-                </div>
-              </label>
-
-              <label class="category-filter__label">
-                <input class="category-filter__input" type="checkbox">
-                <div class="category-filter__contain">
-                  <span class="category-filter__text">Clock</span>
-                </div>
-              </label>
-            </form>
-          </div>
+          @@include('filters/category.html')
         </li>
 
         <li class="blog-aside__item">

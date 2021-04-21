@@ -8,13 +8,12 @@
   position: relative;
 
   &__photo {
+    display: block;
     overflow: hidden;
-    margin-bottom: 35px;
     border-radius: 5px;
   }
 
   &__img {
-    border-radius: 5px;
     max-width: 370px;
     width: 100%;
     height: 250px;
@@ -27,13 +26,13 @@
   }
 
   &__info {
-    padding: 0 20px 15px 29px;
+    padding: 35px 20px 15px 29px;
     position: relative;
   }
 
   &__info-link {
     position: absolute;
-    top: -52px;
+    top: -18px;
     left: 30px;
     border-radius: 15px;
     padding: 4px 31px;

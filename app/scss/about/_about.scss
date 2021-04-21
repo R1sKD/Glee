@@ -28,7 +28,6 @@
     }
   }
 
-
   &__content {
     max-width: 600px;
     padding: 30px 0 80px 45px;
@@ -39,12 +38,12 @@
     }
   }
 
-  &__content-experience {
+  &__experience {
     display: flex;
     align-items: center;
   }
 
-  &__content-year {
+  &__year {
     font-size: 140px;
     @extend %Rubik-700;
     color: $light-blue;
@@ -52,9 +51,13 @@
     line-height: 1.4;
     @include line-camp;
     max-width: 160px;
+
+    @include _768 {
+      font-size: 70px;
+    }
   }
 
-  &__content-year__text {
+  &__year-text {
     @include line-camp;
     -webkit-line-clamp: 3;
     width: 100px;
@@ -63,14 +66,19 @@
     line-height: 1.9;
   }
 
-  &__content-subtitle {
+  &__subtitle {
     margin-bottom: 25px;
     font-size: 36px;
     @include line-camp;
     -webkit-line-clamp: 2;
+
+    @include _768 {
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
   }
 
-  &__content-text {
+  &__text {
     width: 100px;
     @extend %Rubik-400;
     font-size: 16px;
@@ -82,15 +90,23 @@
     border-bottom: 1px solid #e6eaf0;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @include _768 {
+      margin-bottom: 30px;
+    }
   }
 }
 
-.glee-info {
+.glee-project {
   display: flex;
 
   @include _768 {
-    flex-wrap: wrap;
     justify-content: center;
+  }
+
+  @include _480 {
+    flex-wrap: wrap;
+    margin-left: 50px;
   }
 
   &__item {
@@ -100,9 +116,13 @@
     display: flex;
     flex-direction: column;
 
-    @include _768 {
-      margin-bottom: 30px;
+    @include _480 {
       width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
 
     &::before {
@@ -113,6 +133,11 @@
       top: 23px;
       left: 0px;
       background-repeat: no-repeat;
+
+      @include _768 {
+        top: 7px;
+        left: 11px;
+      }
     }
 
     &--projects::before {
@@ -130,6 +155,10 @@
 
   &__num {
     font-size: 36px;
+
+    @include _768 {
+      font-size: 24px;
+    }
   }
 
   &__num,
@@ -137,9 +166,15 @@
     @include line-camp;
     max-width: 90px;
   }
+
+  &__text {
+    @include _768 {
+      font-size: 14px;
+    }
+  }
 }
 
-.glee-stat {
+.glee-rate {
   min-height: 320px;
   background-color: $bg-dark;
   padding: 50px 0 75px 0;
@@ -158,6 +193,10 @@
   &__item {
     padding: 100px 10px 0 10px;
     position: relative;
+
+    @include _480 {
+      margin-bottom: 20px;
+    }
 
     &::before {
       position: absolute;

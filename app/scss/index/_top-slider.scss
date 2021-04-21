@@ -1,6 +1,6 @@
 .top-slider {
   padding-top: 145px;
-  
+
   &__inner {
     background-color: $bg-dark;
   }
@@ -155,37 +155,37 @@
       &:last-child {
         margin-right: 0;
       }
+    }
 
-      button {
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        border-color: transparent;
-        width: 29px;
-        height: 29px;
-        @extend %Rubik-500;
-        color: $dark-blue;
-        font-size: 11px;
-        box-shadow: transparent;
-        transition: box-shadow 0.3s, background-color 0.3s;
-        outline: transparent;
+    .slick-active button {
+      background-color: #ffffff;
+    }
 
-        &:focus {
-          box-shadow: 0px 0px 16px 6px rgba(34, 60, 80, 0.2);
-        }
+    button {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-color: transparent;
+      width: 29px;
+      height: 29px;
+      @extend %Rubik-500;
+      color: $dark-blue;
+      font-size: 11px;
+      box-shadow: transparent;
+      transition: box-shadow 0.3s, background-color 0.3s;
+      outline: transparent;
 
-        &:hover {
-          background-color: #f2a159;
-        }
-
-        &:active {
-          background-color: #ff7802;
-        }
+      &:focus {
+        box-shadow: 0px 0px 16px 6px rgba(34, 60, 80, 0.2);
       }
 
-      &.slick-active {
-        border-radius: 50%;
-        background-color: #ffffff;
+      &:hover {
+        background-color: #f2a159;
+      }
+
+      &:active {
+        background-color: #ff7802;
       }
     }
+
   }
 }
