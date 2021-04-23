@@ -10,11 +10,13 @@
     text-align: center;
     color: $light-blue;
     line-height: 1.3;
+    @include line-camp;
   }
 
   &__title {
     color: $dark-blue;
     margin-bottom: 70px;
+    @include line-camp;
   }
 
   &__list {
@@ -45,7 +47,7 @@
     align-items: center;
     width: 370px;
     height: 380px;
-    padding-top: 60px;
+    padding: 60px 15px 15px;
     background-color: #fbfbfb;
     color: $black;
     @extend %DMSans-700;
@@ -102,6 +104,7 @@
 
   &__name {
     margin-bottom: 15px;
+    @include line-camp;
   }
 
   &__text {
@@ -110,6 +113,8 @@
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
+    @include line-camp;
+    -webkit-line-clamp: 2;
   }
 
   &__bottom {
@@ -128,9 +133,9 @@
 
   .map {
     @include _1366 {
-      order: -1;
       width: 100%;
-      margin: 0 auto 40px;
+      margin: 0 auto; 
+      margin-top: 40px;
     }
   }
 }
