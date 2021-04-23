@@ -1,0 +1,30 @@
+ @@include('parts/head.html', 
+    {"title": "Log in"
+    })
+
+<body>
+
+  @@include('parts/header.html')
+
+  <main class="main">
+    <h1 class="sr-only">Glee furnitures</h1>
+
+     @@include('parts/breadcrumbs.html', 
+    {"title": "Log in",
+     "link": "Log in"
+    })
+
+    @@include('parts/_login.html')
+
+    @@include('parts/partners-slider.html',
+    {"class": "partners-slider--small"
+    })
+
+  </main>
+
+  @@include('parts/footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
