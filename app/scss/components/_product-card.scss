@@ -152,6 +152,7 @@
     color: $dark-blue;
     @extend %DMSans-500;
     line-height: 2.5;
+    @extend %link-style;
   }
 
   &__star {
