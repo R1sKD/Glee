@@ -39,7 +39,9 @@
   &__btn {
     width: 170px;
     padding: 14px 25px;
-    border-radius: 2px;
+    border-radius: 5px;
+    @extend %poppins-700;
+    font-size: 15px;
   }
 
   &__list {

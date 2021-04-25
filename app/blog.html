@@ -111,10 +111,11 @@
     <section class="blog">
   <div class="container">
     <div class="blog__inner">
-      <ul class="blog__content">
-        <li class="blog__content-item">
-          <article class="blog-page @@class">
-  <a class="blog-page__photo">
+      <div class="blog__content">
+        <ul class="blog__list">
+          <li class="blog__item">
+            <article class="blog-page @@class">
+  <a class="blog-page__photo" href="#">
     <img class="blog-page__img" src="images/blog/1.jpg" alt="blog photo">
 
     <div class="date date--blue blog-page__date">
@@ -124,7 +125,7 @@
         </svg>
         <time class="date__text">28 january, 2020</time>
       </div>
-      <div class="date__link" href=" #">
+      <div class="date__link" href="#">
         <svg>
           <use xlink:href='sprite/sprite.svg#icons--user'></use>
         </svg>
@@ -134,7 +135,7 @@
   </a>
 
   <h2 class="blog-page__title">
-    <a class="blog-page__link">
+    <a class="blog-page__link" href="#">
       Fonsectetur adipisicing eiusmod
     </a>
   </h2>
@@ -199,11 +200,11 @@
     View More
   </button>
 </article>
-        </li>
+          </li>
 
-        <li class="blog__content-item">
-          <article class="blog-page @@class">
-  <a class="blog-page__photo">
+          <li class="blog__item">
+            <article class="blog-page @@class">
+  <a class="blog-page__photo" href="#">
     <img class="blog-page__img" src="images/blog/2.jpg" alt="blog photo">
 
     <div class="date date--blue blog-page__date">
@@ -213,7 +214,7 @@
         </svg>
         <time class="date__text">28 january, 2020</time>
       </div>
-      <div class="date__link" href=" #">
+      <div class="date__link" href="#">
         <svg>
           <use xlink:href='sprite/sprite.svg#icons--user'></use>
         </svg>
@@ -223,7 +224,7 @@
   </a>
 
   <h2 class="blog-page__title">
-    <a class="blog-page__link">
+    <a class="blog-page__link" href="#">
       Fonsectetur adipisicing elit,
     </a>
   </h2>
@@ -288,11 +289,11 @@
     View More
   </button>
 </article>
-        </li>
+          </li>
 
-        <li class="blog__content-item">
-          <article class="blog-page @@class">
-  <a class="blog-page__photo">
+          <li class="blog__item">
+            <article class="blog-page @@class">
+  <a class="blog-page__photo" href="#">
     <img class="blog-page__img" src="images/blog/3.jpg" alt="blog photo">
 
     <div class="date date--blue blog-page__date">
@@ -302,7 +303,7 @@
         </svg>
         <time class="date__text">28 january, 2020</time>
       </div>
-      <div class="date__link" href=" #">
+      <div class="date__link" href="#">
         <svg>
           <use xlink:href='sprite/sprite.svg#icons--user'></use>
         </svg>
@@ -312,7 +313,7 @@
   </a>
 
   <h2 class="blog-page__title">
-    <a class="blog-page__link">
+    <a class="blog-page__link" href="#">
       Fsectetur adipisicing tempor incididunt
     </a>
   </h2>
@@ -377,11 +378,11 @@
     View More
   </button>
 </article>
-        </li>
+          </li>
 
-        <li class="blog__content-item">
-          <article class="blog-page @@class">
-  <a class="blog-page__photo">
+          <li class="blog__item">
+            <article class="blog-page @@class">
+  <a class="blog-page__photo" href="#">
     <img class="blog-page__img" src="images/blog/4.jpg" alt="blog photo">
 
     <div class="date date--blue blog-page__date">
@@ -391,7 +392,7 @@
         </svg>
         <time class="date__text">28 january, 2020</time>
       </div>
-      <div class="date__link" href=" #">
+      <div class="date__link" href="#">
         <svg>
           <use xlink:href='sprite/sprite.svg#icons--user'></use>
         </svg>
@@ -401,7 +402,7 @@
   </a>
 
   <h2 class="blog-page__title">
-    <a class="blog-page__link">
+    <a class="blog-page__link" href="#">
       vonsectetur adipisicing elit
     </a>
   </h2>
@@ -466,7 +467,8 @@
     View More
   </button>
 </article>
-        </li>
+          </li>
+        </ul>
 
         <ul class="pagination blog__pagination">
   <li class="pagination__item">
@@ -484,11 +486,11 @@
     </a>
   </li>
 </ul>
-      </ul>
+      </div>
 
       <ul class="blog-aside">
         <li class="blog-aside__item">
-              <form class="search blog__search" action="#">
+              <form class="search @@class" action="#">
       <label class="search__label">
         <input class="search__input" type="text">
       </label>
@@ -503,7 +505,7 @@
 
         <li class="blog-aside__item">
           <div class="category-filter">
-  <button class="filter-btn filter-title" type="button">
+  <button class="filter-title" type="button">
     category
   </button>
   <form class="category-filter__form product-filter" action="#">
@@ -547,102 +549,112 @@
 
         <li class="blog-aside__item">
           <div class="recent">
-            <button class="filter-btn" type="button">
-              <h3 class="filter-title">
-                recent posts
-              </h3>
+            <button class="filter-title" type="button">
+              recent posts
             </button>
             <ul class="recent__list product-filter">
               <li class="recent__item">
-                <article class="recent-content">
-                  <a class="recent-content__link" href="#">
-                    <div class="recent-content__photo">
-                      <img class="recent-content__img" src="images/blog/recent/1.jpg" alt="recent content">
-                    </div>
-                    <div class="recent-content__info">
-                      <h4 class="recent-content__title">
-                        Corem ipsum dolor tetur adipisicing elit
-                      </h4>
-                      <div class="date date--gray">
-                        <div class="date__link">
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
-                          </svg>
-                          <time class="date__time">28 january, 2020</time>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </article>
+                <article class="recent-content recent-content--blog">
+  <a class="recent-content__link" href="#">
+    <div class="recent-content__photo">
+      <img class="recent-content__img" src="images/blog/recent/1.jpg" alt="recent content">
+    </div>
+    <div class="recent-content__info">
+      <h4 class="recent-content__title">
+        Corem ipsum dolor tetur adipisicing elit
+      </h4>
+      <div class="star" data-rateyo-rating="4"></div>
+      <span class="recent-content__price">23$</span>
+
+      <div class="date date--gray">
+        <div class="date__link">
+          <svg>
+            <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
+          </svg>
+          <time class="date__time">28 january, 2020</time>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
               </li>
 
               <li class="recent__item">
-                <article class="recent-content">
-                  <a class="recent-content__link" href="#">
-                    <div class="recent-content__photo">
-                      <img class="recent-content__img" src="images/blog/recent/2.jpg" alt="recent content">
-                    </div>
-                    <div class="recent-content__info">
-                      <h4 class="recent-content__title">
-                        Fdipisicing elit, sed do eiusmod tempor
-                      </h4>
-                      <div class="date date--gray">
-                        <div class="date__link">
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
-                          </svg>
-                          <time class="date__time">28 january, 2020</time>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </article>
+                <article class="recent-content recent-content--blog">
+  <a class="recent-content__link" href="#">
+    <div class="recent-content__photo">
+      <img class="recent-content__img" src="images/blog/recent/2.jpg" alt="recent content">
+    </div>
+    <div class="recent-content__info">
+      <h4 class="recent-content__title">
+        Fdipisicing elit, sed do eiusmod tempor
+      </h4>
+      <div class="star" data-rateyo-rating="4"></div>
+      <span class="recent-content__price">23$</span>
+
+      <div class="date date--gray">
+        <div class="date__link">
+          <svg>
+            <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
+          </svg>
+          <time class="date__time">28 january, 2020</time>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
               </li>
 
               <li class="recent__item">
-                <article class="recent-content">
-                  <a class="recent-content__link" href="#">
-                    <div class="recent-content__photo">
-                      <img class="recent-content__img" src="images/blog/recent/3.jpg" alt="recent content">
-                    </div>
-                    <div class="recent-content__info">
-                      <h4 class="recent-content__title">
-                        Eonsectetur adipisicing elit, sed do eiusmod
-                      </h4>
-                      <div class="date date--gray">
-                        <div class="date__link">
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
-                          </svg>
-                          <time class="date__time">28 january, 2020</time>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </article>
+                <article class="recent-content recent-content--blog">
+  <a class="recent-content__link" href="#">
+    <div class="recent-content__photo">
+      <img class="recent-content__img" src="images/blog/recent/3.jpg" alt="recent content">
+    </div>
+    <div class="recent-content__info">
+      <h4 class="recent-content__title">
+        Eonsectetur adipisicing elit, sed do eiusmod
+      </h4>
+      <div class="star" data-rateyo-rating="4"></div>
+      <span class="recent-content__price">23$</span>
+
+      <div class="date date--gray">
+        <div class="date__link">
+          <svg>
+            <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
+          </svg>
+          <time class="date__time">28 january, 2020</time>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
               </li>
 
               <li class="recent__item">
-                <article class="recent-content">
-                  <a class="recent-content__link" href="#">
-                    <div class="recent-content__photo">
-                      <img class="recent-content__img" src="images/blog/recent/4.jpg" alt="recent content">
-                    </div>
-                    <div class="recent-content__info">
-                      <h4 class="recent-content__title">
-                        gnim ad minim veniam, quis nostrud
-                      </h4>
-                      <div class="date date--gray">
-                        <div class="date__link">
-                          <svg>
-                            <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
-                          </svg>
-                          <time class="date__time">28 january, 2020</time>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </article>
+                <article class="recent-content recent-content--blog">
+  <a class="recent-content__link" href="#">
+    <div class="recent-content__photo">
+      <img class="recent-content__img" src="images/blog/recent/4.jpg" alt="recent content">
+    </div>
+    <div class="recent-content__info">
+      <h4 class="recent-content__title">
+        gnim ad minim veniam, quis nostrud
+      </h4>
+      <div class="star" data-rateyo-rating="4"></div>
+      <span class="recent-content__price">23$</span>
+
+      <div class="date date--gray">
+        <div class="date__link">
+          <svg>
+            <use xlink:href='sprite/sprite.svg#icons--calendar'></use>
+          </svg>
+          <time class="date__time">28 january, 2020</time>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
               </li>
             </ul>
           </div>
@@ -763,9 +775,9 @@
         </ul>
       </div>
 
-      <div class="footer__box">
+      <div class="footer__box footer__box--form">
         <div class="footer__title">newsletter</div>
-        <div class="footer__text">
+        <div class=" footer__text--contact">
           <p>
             Subscribe by our newsletter and get update protidin
           </p>

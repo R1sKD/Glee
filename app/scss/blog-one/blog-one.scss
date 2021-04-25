@@ -113,22 +113,29 @@
 }
 
 .social-link {
+  outline: transparent;
+
+  &:focus {
+    svg {
+      fill: $dark-blue;
+    }
+  }
+
+  &:hover {
+    svg {
+      fill: $light-blue;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $bg-dark;
+    }
+  }
+
   svg {
     fill: #a1a1a1;
     transition: fill 0.3s;
-    outline: transparent;
-
-    &:focus {
-      fill: $dark-blue;
-    }
-
-    &:hover {
-      fill: $light-blue;
-    }
-
-    &:active {
-      fill: $bg-dark;
-    }
   }
 
   &__comments {

@@ -25,12 +25,15 @@
     }
   }
 
-  &__content-item {
+  &__item {
     margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 70px;
+    }
   }
 
   &__pagination {
-    margin-top: 70px;
     justify-content: flex-start;
   }
 }
@@ -47,40 +50,5 @@
     width: 270px;
     width: 100%;
     margin-bottom: 45px;
-  }
-}
-
-.search {
-  display: flex;
-
-  &__label {
-    width: 100%;
-    height: 43px;
-  }
-
-  &__input {
-    width: 100%;
-    height: 43px;
-    border: 1px solid $sky;
-    outline: transparent;
-    transition: border-color 0.3s, background-color 0.3s;
-
-    &:focus {
-      border-color: $dark-blue;
-    }
-
-    &:hover {
-      background-color: $light-blue;
-    }
-
-    &:active {
-      background-color: $dark-blue;
-    }
-  }
-
-  &__btn {
-    width: 48px;
-    height: 43px;
-    box-shadow: none;
   }
 }

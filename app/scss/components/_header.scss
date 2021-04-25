@@ -67,26 +67,24 @@
     @include _1024 {
       display: block;
     }
-
-    @include _600 {
-
-    }
   }
 
   &__list {
     display: flex;
-    max-height: 100vh;
 
     @include _1024 {
-      display: block;
+      flex-direction: column;
+      justify-content: center;
       position: absolute;
       left: 0;
       right: 0;
       top: 0;
       bottom: 0;
+      z-index: 3;
       height: 100vh;
       overflow-y: auto;
       text-align: center;
+      background-color: $bg-medum;
       transform: translatey(-200%);
       transition: transform 0.5s;
     }
@@ -94,8 +92,6 @@
     &--active {
       @include _1024 {
         transform: translatey(0);
-        background-color: $bg-medum;
-        z-index: 3;
       }
     }
   }
@@ -222,6 +218,10 @@
     width: 90px;
     border-radius: 0 23px 23px 0;
     background-color: $bg-dark;
+  }
+
+  &--social {
+    fill: #888888;
   }
 
   &:focus {

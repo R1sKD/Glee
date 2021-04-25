@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'vars';
+@import 'mixin';
 @import 'reset';
 @import 'libs';
 @import 'global';
@@ -14,6 +15,8 @@
 @import 'components/main-form';
 @import 'components/pagination';
 @import 'components/filters';
+@import 'components/search';
+@import 'components/recent-content';
 
 @import 'index/top-slider';
 @import 'index/support';

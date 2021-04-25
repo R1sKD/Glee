@@ -95,7 +95,7 @@ $(function(){
     readOnly: true,
   });
 
-  $('.filter-btn').on('click', function () {
+  $('.filter-title').on('click', function () {
     $(this).siblings().slideToggle();
   });
 

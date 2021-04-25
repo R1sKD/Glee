@@ -101,6 +101,24 @@ body {
     }
   }
 
+  &--arrow-white {
+    text-align: left;
+    position: relative;
+    padding: 20px 100px 20px 28px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 25px;
+      height: 20px;
+      background-image: url(../../sprite/sprite.svg#icons--arrow-right--white);
+      background-repeat: no-repeat;
+    }
+  }
+
   &--transparent {
     color: $blue;
     background-color: transparent;
@@ -146,14 +164,11 @@ body {
   justify-content: center;
 
   @include _480 {
-    display: -webkit-box;
     overflow-x: scroll;
-    margin: 0 auto;
   }
 
   &__item {
     margin-right: 30px;
-    @include line-camp;
 
     @include _480 {
       margin-right: 10px;

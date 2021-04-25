@@ -5,19 +5,6 @@
   text-transform: uppercase;
   position: relative;
   max-width: 200px;
-
-  &:after {
-    content: '';
-    position: absolute;
-    background-color: $light-blue;
-    width: 38px;
-    height: 3px;
-    top: 11px;
-    right: -53px;
-  }
-}
-
-.filter-btn {
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -35,6 +22,16 @@
 
   &:active {
     background-color: $dark-blue;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: $light-blue;
+    width: 38px;
+    height: 3px;
+    top: 11px;
+    right: -53px;
   }
 }
 
@@ -153,11 +150,47 @@
     }
 
     &:focus+.brand-filter__contain {
-       background-color: $bg-light;
+      background-color: $bg-light;
     }
   }
 
   &__text+.brand-filter__text {
     color: #b3b3b3;
+  }
+}
+
+.search {
+  display: flex;
+
+  &__label {
+    width: 100%;
+    height: 43px;
+  }
+
+  &__input {
+    padding: 5px;
+    width: 100%;
+    height: 43px;
+    border: 1px solid $sky;
+    outline: transparent;
+    transition: border-color 0.3s, background-color 0.3s;
+
+    &:focus {
+      border-color: $dark-blue;
+    }
+
+    &:hover {
+      background-color: $light-blue;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+    }
+  }
+
+  &__btn {
+    width: 48px;
+    height: 43px;
+    box-shadow: none;
   }
 }

@@ -20,11 +20,18 @@
 
   &__list {
     margin-left: 40px;
+    list-style-type: decimal-leading-zero;
   }
 
   &__item {
     margin-bottom: 30px;
+ /*    @include line-camp; нельзя ограничить, т.к. пропадает нумерация
+    -webkit-line-clamp: 2;
 
+    @include _1024 {
+      -webkit-line-clamp: 9;
+    } */
+    
     &:last-child {
       margin-bottom: 0;
     }
