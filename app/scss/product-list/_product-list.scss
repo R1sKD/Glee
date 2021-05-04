@@ -42,18 +42,18 @@
     @include _1024 {
       width: 100%;
     }
-  }
 
-  &__item-first {
-    margin-bottom: 53px;
-  }
+    &--price {
+      margin-bottom: 53px;
+    }
 
-  &__item-second {
-    margin-bottom: 74px;
-  }
+    &--brand {
+      margin-bottom: 74px;
+    }
 
-  &__item-third {
-    margin-bottom: 48px;
+    &--recent {
+      margin-bottom: 48px;
+    }
   }
 }
 

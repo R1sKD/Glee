@@ -45,6 +45,7 @@
     width: 77px;
     height: 77px;
     margin-right: 30px;
+    object-fit: conver;
   }
 
   &__name {
@@ -161,6 +162,7 @@
     width: 100px;
     height: 100px;
     margin-right: 30px;
+    object-fit: cover;
 
     @include _480 {
       display: none;

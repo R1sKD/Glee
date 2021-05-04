@@ -173,82 +173,82 @@
   }
 }
 
-.jq-number__field {
-  width: 148px;
-  border: 1px solid $light-blue;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 48px;
-    width: 1px;
-    height: 53px;
-    background-color: $light-blue;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 48px;
-    width: 1px;
-    height: 53px;
-    background-color: $light-blue;
-  }
-}
-
-.jq-number__field input {
-  width: 100%;
-  height: 53px;
-  @extend %Rubik-400;
-  border: none;
-  font-size: 15px;
-  color: $black;
-  text-align: center;
-}
-
 .jq-number {
   padding: 0;
   position: relative;
-}
 
-.jq-number__spin {
-  position: absolute;
-  cursor: pointer;
-  width: 52px;
-  height: 52px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  &__field {
+    width: 148px;
+    border: 1px solid $light-blue;
+    position: relative;
 
-.jq-number__spin.plus {
-  right: 0;
-}
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 48px;
+      width: 1px;
+      height: 53px;
+      background-color: $light-blue;
+    }
 
-.jq-number__spin.minus {
-  left: 0;
-}
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 48px;
+      width: 1px;
+      height: 53px;
+      background-color: $light-blue;
+    }
+  }
 
-.jq-number__spin:after {
-  content: '';
-  position: absolute;
-  top: 25px;
-  left: 23px;
-  width: 8px;
-  height: 1px;
-  background-color: $black;
-}
+  &__field input {
+    width: 100%;
+    height: 53px;
+    @extend %Rubik-400;
+    border: none;
+    font-size: 15px;
+    color: $black;
+    text-align: center;
+  }
 
-.jq-number__spin.plus:before {
-  content: '';
-  position: absolute;
-  top: 22px;
-  left: 26px;
-  width: 1px;
-  height: 8px;
-  background-color: $black;
+  &__spin {
+    position: absolute;
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__spin.plus {
+    right: 0;
+  }
+
+  &__spin.minus {
+    left: 0;
+  }
+
+  &__spin:after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 23px;
+    width: 8px;
+    height: 1px;
+    background-color: $black;
+  }
+
+  &__spin.plus:before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 26px;
+    width: 1px;
+    height: 8px;
+    background-color: $black;
+  }
 }
 
 .product-info {

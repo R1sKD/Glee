@@ -86,17 +86,17 @@ function svgSprites() {
   .pipe(dest('app/sprite/'))
 }
 
+function cleanDist(){
+  return del('dist')
+}
+
 function build(){
   return src([
-    'app/**/*.html',
+    'app/*.html',
     'app/css/style.min.css',
     'app/js/main.min.js'
   ], {base: 'app'})
   .pipe(dest('dist'))
-}
-
-function cleanDist(){
-  return del('dist')
 }
 
 function watching() {

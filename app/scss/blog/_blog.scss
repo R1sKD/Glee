@@ -48,7 +48,10 @@
 
   &__item {
     width: 270px;
-    width: 100%;
     margin-bottom: 45px;
+
+    @include _1366 {
+      width: 100%;
+    }
   }
 }

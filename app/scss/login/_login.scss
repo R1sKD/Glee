@@ -22,6 +22,19 @@
     &--remember {
       padding-left: 25px;
     }
+
+    &--password {
+      @extend %Rubik-400;
+      font-size: 14px;
+      color: $light-blue;
+      @extend %link-style;
+      max-width: 200px;
+    }
+
+    &--notregister {
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
 
   &__label {
@@ -101,19 +114,6 @@
     top: 5px;
     background-color: #ebebeb;
     position: absolute;
-  }
-
-  &__lost-password {
-    @extend %Rubik-400;
-    font-size: 14px;
-    color: $light-blue;
-    @extend %link-style;
-    max-width: 200px;
-  }
-
-  &__notregister {
-    margin-bottom: 20px;
-    text-align: center;
   }
 
   &__link {

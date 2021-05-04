@@ -124,9 +124,9 @@
           </a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">
+          <span class="breadcrumbs__link" href="#">
             Contact
-          </a>
+          </span>
         </li>
       </ul>
   </div>
@@ -138,7 +138,7 @@
     <h2 class="contact__title title">Get In Touch</h2>
     <ul class="contact__list">
       <li class="contact__item">
-        <a class="contact__link" href="#">
+        <div class="contact__box">
           <div class="contact__icon">
             <svg>
               <use xlink:href='sprite/sprite.svg#icons--address'></use>
@@ -149,11 +149,11 @@
             <p>2416 Mapleview Drive</p>
             <p>Tampa, FL 33634</p>
           </div>
-        </a>
+        </div>
       </li>
 
       <li class="contact__item">
-        <a class="contact__link" href="#">
+        <div class="contact__box">
           <div class="contact__icon">
             <svg>
               <use xlink:href='sprite/sprite.svg#icons--mail'></use>
@@ -161,14 +161,18 @@
           </div>
           <div class="contact__name">Our Email</div>
           <div class="contact__text">
-            <p>Main Email : contact@website.com</p>
-            <p>Inquiries : Info@mail.com</p>
+            <p>Main Email : 
+              <a class="contact__link" href="mailto:contact@website.com">contact@website.com</a>
+            </p>
+            <p>Inquiries : 
+              <a class="contact__link" href="mailto:Info@mail.com">Info@mail.com</a>
+            </p>
           </div>
-        </a>
+        </div>
       </li>
 
       <li class="contact__item">
-        <a class="contact__link" href="#">
+        <div class="contact__box">
           <div class="contact__icon">
             <svg>
               <use xlink:href='sprite/sprite.svg#icons--phone'></use>
@@ -176,10 +180,14 @@
           </div>
           <div class="contact__name">Our Phone</div>
           <div class="contact__text">
-            <p>Office Telephone : 0029129102320</p>
-            <p>Mobile : 000 2324 39493</p>
+            <p>Office Telephone : 
+              <a class="contact__link" href="tel:0029129102320">0029129102320</a>
+            </p>
+            <p>Mobile : 
+              <a class="contact__link" href="tel:000232439493">000 2324 39493</a>
+            </p>
           </div>
-        </a>
+        </div>
       </li>
     </ul>
 
@@ -379,30 +387,32 @@
   <footer class="footer">
   <div class="container">
     <div class="footer__top">
-      <address class="footer__box">
+      <div class="footer__box">
         <a class="logo footer__logo" href="index.html">
           <img class="logo__img" src="images/logo.png" alt="logo Glee">
         </a>
 
-        <ul class="footer__list">
-          <li class="footer__item">
-            <span class="footer__text">
-              <span class="footer__contact">ADDRESS:</span>
+        <address class="footer__address">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <span class="footer__text">
+                <span class="footer__contact">ADDRESS:</span>
                 4772 Wines Lane Houston, TX 77032
-            </span>
-          </li>
+              </span>
+            </li>
 
-          <li class="footer__item">
-            <span class="footer__contact">Telephone:</span>
-            <a class="footer__contact-link" href="tel:+8323475843">+832-347-5843</a>
-          </li>
+            <li class="footer__item">
+              <span class="footer__contact">Telephone:</span>
+              <a class="footer__contact-link" href="tel:+8323475843">+832-347-5843</a>
+            </li>
 
-          <li class="footer__item">
-            <span class="footer__contact">Email:</span>
-            <a class="footer__contact-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
-          </li>
-        </ul>
-      </address>
+            <li class="footer__item">
+              <span class="footer__contact">Email:</span>
+              <a class="footer__contact-link" href="mailto:contact@Glee.com">contact@Glee.com</a>
+            </li>
+          </ul>
+        </address>
+      </div>
 
       <div class="footer__box">
         <div class="footer__title">Services</div>
@@ -466,20 +476,22 @@
           ©2020 CopyRight Example. All rights reserved.
         </p>
       </div>
-      <ul class="footer__copy-list">
-        <li class="footer__copy-item">
-          <a class="footer__link" href="index.html">Home</a>
-        </li>
-        <li class="footer__copy-item">
-          <a class="footer__link" href="about.html">About</a>
-        </li>
-        <li class="footer__copy-item">
-          <a class="footer__link" href="blog.html">Blog</a>
-        </li>
-        <li class="footer__copy-item">
-          <a class="footer__link" href="contacts.html">Contact</a>
-        </li>
-      </ul>
+      <nav class="footer__copy-nav">
+        <ul class="footer__copy-list">
+          <li class="footer__copy-item">
+            <a class="footer__link" href="index.html">Home</a>
+          </li>
+          <li class="footer__copy-item">
+            <a class="footer__link" href="about.html">About</a>
+          </li>
+          <li class="footer__copy-item">
+            <a class="footer__link" href="blog.html">Blog</a>
+          </li>
+          <li class="footer__copy-item">
+            <a class="footer__link" href="contacts.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </footer>
