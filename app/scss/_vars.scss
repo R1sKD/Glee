@@ -1,0 +1,100 @@
+$blue: #436372;
+$light-blue: #a3bbc8;
+$dark-blue: #243f4d;
+
+$sky: #edf1f4;
+
+$bg-light: #fef7f0;
+$bg-medum: #feefe2;
+$bg-dark: #fcd7b6;
+
+$black: #333333;
+
+
+%DMSans-700 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 700;
+}
+
+%DMSans-500 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 500;
+}
+
+%DMSans-400 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 400;
+}
+
+%Rubik-700 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+%Rubik-500 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+%Rubik-400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+%Rubik-300 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+%poppins-700 {
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%link-style {
+  outline: transparent;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: $dark-blue;
+    transform: scaleX(0);
+    transition: transform 0.5s ease, color 0.3s;
+  }
+
+  &:focus:before {
+    transform: scaleX(1);
+    background: $bg-dark;
+  }
+
+  &:hover:before {
+    transform: scaleX(1);
+  }
+
+  &:active {
+    color: $bg-dark;
+  }
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
